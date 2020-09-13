@@ -112,12 +112,12 @@ export default function Home() {
                 <p>JavaScript</p>
               </li>
               <li>
-                <FontAwesomeIcon aria-hidden="true" icon={faReact} />
-                <p>React</p>
-              </li>
-              <li>
                 jQuery pic
                 <p>jQuery</p>
+              </li>
+              <li>
+                <FontAwesomeIcon aria-hidden="true" icon={faReact} />
+                <p>React</p>
               </li>
               <li>
                 <FontAwesomeIcon aria-hidden="true" icon={faVuejs} />

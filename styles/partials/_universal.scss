@@ -128,3 +128,29 @@ h4 {
     width: 48px;
   }
 }
+
+.current {
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 60%;
+  margin-right: 10%;
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  li {
+    flex: 0 0 20%;
+    margin-right: 2.5%;
+  }
+  svg {
+    width: 64px;
+    height: 64px;
+    color: $secondary-accent-text;
+  }
+}
+
+.future {
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 30%;
+}
