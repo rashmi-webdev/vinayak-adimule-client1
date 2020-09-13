@@ -15,6 +15,7 @@ import {
   faAccessibleIcon,
   faPython,
   faFigma,
+  faBootstrap,
 } from "@fortawesome/free-brands-svg-icons";
 
 import { faExpand } from "@fortawesome/free-solid-svg-icons";
@@ -108,6 +109,10 @@ export default function Home() {
                 <p>Less</p>
               </li>
               <li>
+                <FontAwesomeIcon aria-hidden="true" icon={faBootstrap} />
+                <p>Bootstrap</p>
+              </li>
+              <li>
                 <FontAwesomeIcon aria-hidden="true" icon={faJs} />
                 <p>JavaScript</p>
               </li>
@@ -149,15 +154,37 @@ export default function Home() {
                 <p>Python</p>
               </li>
               <li>
-                <FontAwesomeIcon aria-hidden="true" icon={faPython} />
-                <p>Python</p>
-              </li>
-              <li>
                 <FontAwesomeIcon aria-hidden="true" icon={faFigma} />
                 <p>Figma</p>
               </li>
             </ul>
           </div>
+        </div>
+      </section>
+      <section className="featured-project">
+        <h2>Featured</h2>
+        <img src="/images/LHPreview.gif" alt="" />
+        <h3>Lawson Heights</h3>
+        <div className="featured-layout">
+          <div className="project-description">
+            <p>
+              Client site built at Mobile Fringe. Front-end built with Vue.js to
+              extract dynamic content from CMS. Utilizes Vuex for state
+              management, and Vue-Router for routing.{" "}
+            </p>
+            <p>
+              <strong>Used:</strong>Vue.js, Nuxt.js, Sass, HTML5, Bootstrap,
+              JavaScript, Error Handling, Responsive Web Design
+            </p>
+          </div>
+          <a
+            className="btn-secondary"
+            href="https://mallatlawsonheights.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            View Live
+          </a>
         </div>
       </section>
     </Layout>

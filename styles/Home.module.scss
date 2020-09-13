@@ -39,7 +39,11 @@ section.skillsBackground {
 }
 
 .skills {
+  h2 {
+    margin-bottom: 30px;
+  }
   @include wrapper;
   display: flex;
   padding: 55px 0;
+  text-align: center;
 }

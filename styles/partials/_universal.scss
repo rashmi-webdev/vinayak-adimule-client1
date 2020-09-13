@@ -132,20 +132,30 @@ h4 {
 .current {
   display: flex;
   flex-direction: column;
-  flex: 0 0 60%;
-  margin-right: 10%;
+  flex: 0 0 70%;
+  margin-right: 5%;
   ul {
     display: flex;
     flex-wrap: wrap;
   }
   li {
-    flex: 0 0 20%;
-    margin-right: 2.5%;
+    // flex: 0 0 calc(25% - 60px);
+    // flex: 0 0 25%;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 44px 0;
+    border: 3px solid $main-text;
+    width: 189px;
+    height: 189px;
   }
   svg {
-    width: 64px;
-    height: 64px;
+    // width: 64px;
+    // height: 64px;
     color: $secondary-accent-text;
+    margin-bottom: 20px;
   }
 }
 
@@ -153,4 +163,27 @@ h4 {
   display: flex;
   flex-direction: column;
   flex: 0 0 30%;
+  ul {
+    display: flex;
+    // flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+  }
+  li {
+    // flex: 0 0 calc(25% - 60px);
+    // flex: 0 0 189px;
+    // margin-right: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 44px 0;
+    border: 3px solid $main-text;
+    width: 189px;
+    height: 189px;
+  }
+  svg {
+    color: $button-background-teal;
+    margin-bottom: 20px;
+  }
 }
