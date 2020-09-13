@@ -1,0 +1,75 @@
+// stripping styles
+*{
+    padding:0;
+    margin:0;
+    line-height:1.6;
+}
+
+body {
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;;
+}
+
+html {
+    // font-size: 125%;
+    // font-family: $robo;
+    // color: $text-col;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    display:block;
+    width:100%;
+    max-width: 100%;
+}
+
+.wrapper {
+    max-width:1280px;
+    width:90%;
+    margin: 0 auto;
+}
+
+.skip-link {
+    position: absolute;
+    left: -1000px;
+    top: 5px;
+    z-index: 999;
+    background: black;
+    color: white;
+}
+
+.skip-link:focus {
+    left:0;
+}
+
+// heading styles 
+h1 {
+    font-weight: 600;
+    font-size: 2.75rem;
+    line-height: 66px;
+}
+
+h2 {
+    font-weight: 500;
+    font-size: 2rem;
+    line-height: 48px;
+}
+
+h3 {
+    font-weight: bold;
+    font-size: 1.5rem;
+    line-height: 36px;
+}
+
+h4 {
+    font-weight: 600;
+    font-size: 1.125rem;
+    line-height: 27px;
+}
