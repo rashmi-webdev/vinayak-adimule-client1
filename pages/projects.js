@@ -7,8 +7,8 @@ export default function Projects() {
       <Head>
         <title>Irene Truong | Projects</title>
       </Head>
-      <header>projects page</header>
-      <main></main>
+
+      <main>projects page</main>
     </Layout>
   );
 }

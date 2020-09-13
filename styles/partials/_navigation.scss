@@ -1,4 +1,10 @@
+header {
+  position: absolute;
+  width: 100%;
+}
+
 .header-nav {
+  // position: fixed;
   margin-top: 54px;
   display: flex;
   justify-content: space-between;

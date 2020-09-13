@@ -1,75 +1,130 @@
 // stripping styles
-*{
-    padding:0;
-    margin:0;
-    line-height:1.6;
+* {
+  padding: 0;
+  margin: 0;
+  line-height: 1.6;
 }
 
 body {
-    font-size: 16px;
-    font-family: 'Poppins', sans-serif;;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  color: $main-text;
 }
 
 html {
-    // font-size: 125%;
-    // font-family: $robo;
-    // color: $text-col;
+  // font-size: 125%;
+  // font-family: $robo;
+  // color: $text-col;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 ul {
-    list-style: none;
+  list-style: none;
 }
 
 img {
-    display:block;
-    width:100%;
-    max-width: 100%;
+  display: block;
+  width: 100%;
+  max-width: 100%;
+}
+
+.nav-wrapper {
+  max-width: 1420px;
+  width: 95%;
+  margin: 0 auto;
 }
 
 .wrapper {
-    max-width:1280px;
-    width:90%;
-    margin: 0 auto;
+  @include wrapper;
 }
 
 .skip-link {
-    position: absolute;
-    left: -1000px;
-    top: 5px;
-    z-index: 999;
-    background: black;
-    color: white;
+  position: absolute;
+  left: -1000px;
+  top: 5px;
+  z-index: 999;
+  background: black;
+  color: white;
 }
 
 .skip-link:focus {
-    left:0;
+  left: 0;
 }
 
-// heading styles 
+// heading styles
 h1 {
-    font-weight: 600;
-    font-size: 2.75rem;
-    line-height: 66px;
+  font-weight: 600;
+  font-size: 2.75rem;
+  line-height: 66px;
+  span {
+    color: $text;
+  }
 }
 
 h2 {
-    font-weight: 500;
-    font-size: 2rem;
-    line-height: 48px;
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 48px;
 }
 
 h3 {
-    font-weight: bold;
-    font-size: 1.5rem;
-    line-height: 36px;
+  font-weight: bold;
+  font-size: 1.5rem;
+  line-height: 36px;
 }
 
 h4 {
-    font-weight: 600;
-    font-size: 1.125rem;
-    line-height: 27px;
+  font-weight: 600;
+  font-size: 1.125rem;
+  line-height: 27px;
+}
+
+.btn-primary {
+  @include button($secondary-accent-text, 13px 55px);
+  border: 3px solid $secondary-accent-text;
+  &:hover {
+    background: #b55700;
+    border: 3px solid #b55700;
+  }
+  &:focus {
+    background: #b55700;
+    border: 3px solid #ffab5c;
+  }
+}
+
+.btn-secondary {
+  @include button($button-background-teal, 13px 55px);
+  border: 3px solid $button-background-teal;
+  &:hover {
+    background: #097366;
+    border: 3px solid #097366;
+  }
+  &:focus {
+    background: #097366;
+    border: 3px solid $secondary-dark-bg;
+  }
+}
+
+.social-icons-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.social-icons-container {
+  max-width: 225px;
+  a {
+    color: $main-text;
+    transition: 0.3s ease all;
+    &:hover,
+    &:focus {
+      //   color: $secondary-dark-bg;
+    }
+  }
+  svg {
+    height: 48px;
+    width: 48px;
+  }
 }

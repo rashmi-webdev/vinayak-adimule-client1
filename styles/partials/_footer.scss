@@ -5,22 +5,24 @@ footer {
     color: $secondary-dark-bg;
     text-align: center;
   }
+  .social-icons-container {
+    margin: 0 auto;
+    max-width: 296px;
+    a {
+      color: $text;
+      transition: 0.3s ease all;
+      &:hover,
+      &:focus {
+        color: $secondary-dark-bg;
+      }
+    }
+    svg {
+      height: 64px;
+      width: 64px;
+    }
+  }
 }
 
 .social-and-credits {
   padding: 64px 0;
-}
-
-.social-icons-container {
-  display: flex;
-  justify-content: space-between;
-  max-width: 296px;
-  margin: 0 auto;
-  a {
-    color: $text;
-  }
-  svg {
-    height: 64px;
-    width: 64px;
-  }
 }

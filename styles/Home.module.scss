@@ -1,0 +1,35 @@
+@import "partials/variables";
+
+.heroBackground {
+  height: 900px;
+  background: rgba(0, 0, 0, 0.5);
+  h1 {
+    max-width: 740px;
+    padding-top: 255px;
+    margin-bottom: 64px;
+  }
+}
+
+.socialContainer {
+  margin-top: 162px;
+}
+
+.about {
+  display: flex;
+  padding: 155px 0;
+  @include wrapper;
+  .portraitContainer {
+    flex: 0 0 calc(50% - 142px);
+    margin-right: 142px;
+  }
+  .copy {
+    flex: 0 0 50%;
+  }
+  h2 {
+    color: $accent-text;
+    margin-bottom: 12px;
+  }
+  p {
+    margin-bottom: 36px;
+  }
+}

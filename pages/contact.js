@@ -7,8 +7,8 @@ export default function Contact() {
       <Head>
         <title>Irene Truong | Contact</title>
       </Head>
-      <header>contact page</header>
-      <main></main>
+
+      <main>contact page</main>
     </Layout>
   );
 }
