@@ -15,15 +15,15 @@ class NavBar extends React.Component {
     const { navBarData } = this.state;
     return (
       <>
-        <nav className="header-nav">
+        <nav className="header-nav wrapper">
           <div className="logo-container">
             <img src="/images/old-logo.svg" alt="" />
           </div>
           <ul>
-            {navBarData.map(({ id, href, displayName }) => (
+            {navBarData.map(({ id, href, displayName}) => (
               <li key={id}>
                 <Link href={href}>
-                  <a>{displayName}</a>
+                  <a >{displayName}</a>
                 </Link>
               </li>
             ))}

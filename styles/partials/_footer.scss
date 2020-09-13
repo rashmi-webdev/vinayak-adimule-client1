@@ -1,0 +1,26 @@
+footer {
+  background: $dark-bg;
+  p {
+    margin-top: 45px;
+    color: $secondary-dark-bg;
+    text-align: center;
+  }
+}
+
+.social-and-credits {
+  padding: 64px 0;
+}
+
+.social-icons-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 296px;
+  margin: 0 auto;
+  a {
+    color: $text;
+  }
+  svg {
+    height: 64px;
+    width: 64px;
+  }
+}

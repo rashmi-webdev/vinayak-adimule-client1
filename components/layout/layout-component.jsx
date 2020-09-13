@@ -4,6 +4,7 @@ import Head from "next/head";
 // import components that persist
 import NavBar from "../navigation/nav-bar-component";
 
+import PersistFooter from "../footer/footer-component";
 
 const name = "Irene Truong";
 export const siteTitle = "Irene Truong | Web Developer";
@@ -72,6 +73,7 @@ export default function Layout({ children, home }) {
         </div>
       )} */}
       {/* </div> */}
+      <PersistFooter />
     </>
   );
 }

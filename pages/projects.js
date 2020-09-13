@@ -1,13 +1,13 @@
 import Head from "next/head";
 import Layout from "../components/layout/layout-component";
 
-export default function Contact() {
+export default function Projects() {
   return (
     <Layout>
       <Head>
-        <title>Irene Truong | Contact</title>
+        <title>Irene Truong | Projects</title>
       </Head>
-      <header>contact page</header>
+      <header>projects page</header>
       <main></main>
     </Layout>
   );
