@@ -2,6 +2,23 @@ import Head from "next/head";
 
 import Layout from "../components/layout/layout-component";
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faHtml5,
+  faCss3Alt,
+  faSass,
+  faLess,
+  faJs,
+  faReact,
+  faVuejs,
+  faGit,
+  faAccessibleIcon,
+  faPython,
+  faFigma,
+} from "@fortawesome/free-brands-svg-icons";
+
+import { faExpand } from "@fortawesome/free-solid-svg-icons";
+
 // using link
 import Link from "next/link";
 
@@ -52,6 +69,8 @@ export default function Home() {
             Professionally, I perform accessibility enhancements for websites
             and work with a ton of legacy code. I write in both React.js and
             Vue.js for more modern sites. This website is written in React.js ☺️
+            I also bring professional experience working with Figma as part of
+            my growing skillset.
           </p>
           <p>
             I have worked in both start-up and big corporation environments
@@ -67,12 +86,78 @@ export default function Home() {
           </p>
         </div>
       </section>
-      <section className="skills">
-        <div className="current">
-          <h2>Fluent in</h2>
-        </div>
-        <div className="future">
-          <h2>Levelling up on</h2>
+      <section className={homeStyles.skillsBackground}>
+        <div className={homeStyles.skills}>
+          <div className="current">
+            <h2>Fluent in</h2>
+            <ul>
+              <li>
+                <FontAwesomeIcon aria-hidden="true" icon={faHtml5} />
+                <p>HTML5</p>
+              </li>
+              <li>
+                <FontAwesomeIcon aria-hidden="true" icon={faCss3Alt} />
+                <p>CSS3</p>
+              </li>
+              <li>
+                <FontAwesomeIcon aria-hidden="true" icon={faSass} />
+                <p>SCSS/SASS</p>
+              </li>
+              <li>
+                <FontAwesomeIcon aria-hidden="true" icon={faLess} />
+                <p>Less</p>
+              </li>
+              <li>
+                <FontAwesomeIcon aria-hidden="true" icon={faJs} />
+                <p>JavaScript</p>
+              </li>
+              <li>
+                <FontAwesomeIcon aria-hidden="true" icon={faReact} />
+                <p>React</p>
+              </li>
+              <li>
+                jQuery pic
+                <p>jQuery</p>
+              </li>
+              <li>
+                <FontAwesomeIcon aria-hidden="true" icon={faVuejs} />
+                <p>Vue</p>
+              </li>
+              <li>
+                <FontAwesomeIcon aria-hidden="true" icon={faGit} />
+                <p>Git</p>
+              </li>
+              <li>
+                <FontAwesomeIcon aria-hidden="true" icon={faExpand} />
+                <p>RWD</p>
+              </li>
+              <li>
+                <FontAwesomeIcon aria-hidden="true" icon={faAccessibleIcon} />
+                <p>Web accessibility</p>
+              </li>
+            </ul>
+          </div>
+          <div className="future">
+            <h2>Levelling up on</h2>
+            <ul>
+              <li>
+                REDUX PIC
+                <p>Redux</p>
+              </li>
+              <li>
+                <FontAwesomeIcon aria-hidden="true" icon={faPython} />
+                <p>Python</p>
+              </li>
+              <li>
+                <FontAwesomeIcon aria-hidden="true" icon={faPython} />
+                <p>Python</p>
+              </li>
+              <li>
+                <FontAwesomeIcon aria-hidden="true" icon={faFigma} />
+                <p>Figma</p>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
     </Layout>
