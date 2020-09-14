@@ -12,7 +12,14 @@ export default function ProjectCard(props) {
             <p>{props.project.description}</p>
             <p className="tech-used">
               <strong>Used:</strong>
-              {props.project.skills}
+              {/* {props.project.skills} */}
+
+              {props.project.skills.map((oneSkill, index) => (
+                <span key={oneSkill.id}>
+                  {oneSkill.name}{" "}
+                  {index < props.project.skills.length - 1 ? ", " : ""}
+                </span>
+              ))}
             </p>
           </div>
         </div>
