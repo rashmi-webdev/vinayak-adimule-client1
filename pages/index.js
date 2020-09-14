@@ -1,6 +1,7 @@
 import Head from "next/head";
 
 import Layout from "../components/layout/layout-component";
+// import { motion } from "framer-motion";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -35,6 +36,7 @@ import homeStyles from "../styles/Home.module.scss";
 
 export default function Home() {
   return (
+    // <motion.div exit={{ opacity: 0 }}>
     <Layout home>
       <Head>
         <title>Irene Truong | Web Developer</title>
@@ -201,5 +203,6 @@ export default function Home() {
         </div>
       </section>
     </Layout>
+    // </motion.div>
   );
 }

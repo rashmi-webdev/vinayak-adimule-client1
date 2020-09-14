@@ -1,10 +1,12 @@
 import "../styles/globals.scss";
-import Layout from "../components/layout/layout-component.jsx"
+
+import { AnimatePresence } from "framer-motion";
+
 const MyApp = ({ Component, pageProps, router }) => {
   return (
-    <Layout>
+    <AnimatePresence exitBeforeEnter>
       <Component {...pageProps} key={router.route} />
-    </Layout>
-  )
-}
-export default MyApp
+    </AnimatePresence>
+  );
+};
+export default MyApp;

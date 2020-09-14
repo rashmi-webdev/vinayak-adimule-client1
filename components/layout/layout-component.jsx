@@ -1,7 +1,7 @@
 import Head from "next/head";
 // import Link from "next/link";
 
-import Transition from "../Transition";
+import { motion } from "framer-motion";
 import { useRouter } from "next/router";
 
 // components
@@ -40,39 +40,13 @@ export default function Layout({ children, home, contact }) {
       </Head>
       <header>
         <NavBar />
-        {/* {home ? (
-          <>
-            <img
-              src="/images/profile.jpg"
-              className={`${styles.headerHomeImage} ${utilStyles.borderCircle}`}
-              alt={name}
-            />
-            <h1 className={utilStyles.heading2Xl}>{name}</h1>
-          </>
-        ) : (
-          <>
-            <Link href="/">
-              <a>
-                <img
-                  src="/images/profile.jpg"
-                  className={`${styles.headerImage} ${utilStyles.borderCircle}`}
-                  alt={name}
-                />
-              </a>
-            </Link>
-            <h2 className={utilStyles.headingLg}>
-              <Link href="/">
-                <a className={utilStyles.colorInherit}>{name}</a>
-              </Link>
-            </h2>
-          </>
-        )} */}
       </header>
-      <Transition location={router.pathname}>
-        <main>{children}</main>
-        {!contact && <ConditionalCTA />}
-      </Transition>
 
+      <motion.div exit={{ opacity: 0 }}>
+        <main>{children}</main>
+      </motion.div>
+
+      {!contact && <ConditionalCTA />}
       {/* </div> */}
       <PersistFooter />
     </>
