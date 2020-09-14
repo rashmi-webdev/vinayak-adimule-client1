@@ -129,61 +129,52 @@ h4 {
   }
 }
 
-.current {
-  display: flex;
-  flex-direction: column;
-  flex: 0 0 70%;
-  margin-right: 5%;
-  ul {
-    display: flex;
-    flex-wrap: wrap;
+// scroll to about arrow
+.scroll-to-about {
+  position: absolute;
+  bottom: 45px;
+  left: calc(50% - 58px);
+}
+
+//see more projects/scroll to top arrow
+aside {
+  @include wrapper;
+  position: relative;
+  text-align: center;
+  h3 {
+    margin-bottom: 30px;
   }
-  li {
-    // flex: 0 0 calc(25% - 60px);
-    // flex: 0 0 25%;
-    margin-right: 20px;
-    margin-bottom: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 44px 0;
-    border: 3px solid $main-text;
-    width: 189px;
-    height: 189px;
+  a {
+    margin-bottom: 84px;
   }
-  svg {
-    // width: 64px;
-    // height: 64px;
-    color: $secondary-accent-text;
-    margin-bottom: 20px;
+  .top {
+    margin-bottom: 0;
   }
 }
 
-.future {
-  display: flex;
-  flex-direction: column;
-  flex: 0 0 30%;
-  ul {
-    display: flex;
-    // flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
+.arrow {
+  height: 100px;
+  width: 58px;
+}
+
+.top {
+  position: absolute;
+  bottom: 34px;
+  left: 100%;
+  z-index: 50;
+  color: $main-text;
+  padding: 10px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  img {
+    margin-bottom: 10px;
   }
-  li {
-    // flex: 0 0 calc(25% - 60px);
-    // flex: 0 0 189px;
-    // margin-right: 20px;
-    margin-bottom: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 44px 0;
-    border: 3px solid $main-text;
-    width: 189px;
-    height: 189px;
+  p {
+    text-align: center;
+    width: 58px;
+    font-weight: bold;
   }
-  svg {
-    color: $button-background-teal;
-    margin-bottom: 20px;
+  &:hover,
+  &:focus {
   }
 }

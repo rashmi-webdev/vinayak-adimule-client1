@@ -2,7 +2,10 @@
 
 .heroBackground {
   height: 900px;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.5) url("/images/hero.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
   h1 {
     max-width: 740px;
     padding-top: 255px;
@@ -32,10 +35,6 @@
   p {
     margin-bottom: 36px;
   }
-}
-
-section.skillsBackground {
-  background: #e5e5e5;
 }
 
 .skills {

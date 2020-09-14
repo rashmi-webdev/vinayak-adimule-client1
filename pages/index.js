@@ -18,13 +18,18 @@ import {
   faBootstrap,
 } from "@fortawesome/free-brands-svg-icons";
 
-import { faExpand } from "@fortawesome/free-solid-svg-icons";
+import {
+  faExpand,
+  faArrowUp,
+  faArrowDown,
+} from "@fortawesome/free-solid-svg-icons";
 
 // using link
 import Link from "next/link";
 
 // importing components
 import SocialIcons from "../components/social-icons/social-icons-component";
+// import SeeMoreProjects from "../components/see-more/see-more-projects.component";
 
 // importing styles
 import homeStyles from "../styles/Home.module.scss";
@@ -37,26 +42,33 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <section class={homeStyles.heroBackground}>
-        <div className="hero-image">
-          <div className="wrapper">
-            <h1>
-              Irene Truong is a web developer experienced in{" "}
-              <span>
-                building blocks of the internet in both start-up and corporate
-                settings
-              </span>
-              .
-            </h1>
-            <Link href="/projects">
-              <a className="btn-primary">View Projects</a>
-            </Link>
-            <div className={homeStyles.socialContainer}>
-              <SocialIcons />
-            </div>
+        {/* <div className="hero-image"> */}
+        <div className="wrapper">
+          <h1>
+            Irene Truong is a web developer experienced in{" "}
+            <span>
+              building blocks of the internet in both start-up and corporate
+              settings
+            </span>
+            .
+          </h1>
+          <Link href="/projects">
+            <a className="btn-primary">View Projects</a>
+          </Link>
+          <div className={homeStyles.socialContainer}>
+            <SocialIcons />
           </div>
         </div>
+        <a
+          href="#about"
+          className="scroll-to-about"
+          aria-label="Click to scroll to Irene's about section."
+        >
+          <img src="/images/scroll-down-arrow.svg" alt="" className="arrow" />
+        </a>
+        {/* </div> */}
       </section>
-      <section className={homeStyles.about}>
+      <section className={homeStyles.about} id="about">
         <div className={homeStyles.portraitContainer}>
           <img src="/images/portrait.jpg" alt="Irene's headshot." />
         </div>
@@ -87,7 +99,7 @@ export default function Home() {
           </p>
         </div>
       </section>
-      <section className={homeStyles.skillsBackground}>
+      <section className="skills-background">
         <div className={homeStyles.skills}>
           <div className="current">
             <h2>Fluent in</h2>
@@ -162,7 +174,7 @@ export default function Home() {
         </div>
       </section>
       <section className="featured-project">
-        <h2>Featured</h2>
+        <h2>Featured Project</h2>
         <img src="/images/LHPreview.gif" alt="" />
         <h3>Lawson Heights</h3>
         <div className="featured-layout">
@@ -172,9 +184,9 @@ export default function Home() {
               extract dynamic content from CMS. Utilizes Vuex for state
               management, and Vue-Router for routing.{" "}
             </p>
-            <p>
-              <strong>Used:</strong>Vue.js, Nuxt.js, Sass, HTML5, Bootstrap,
-              JavaScript, Error Handling, Responsive Web Design
+            <p className="tech-used">
+              <strong>Used:</strong>Vue.js, Nuxt.js, HTML5, SCSS, Bootstrap,
+              JavaScript, Responsive Web Design
             </p>
           </div>
           <a

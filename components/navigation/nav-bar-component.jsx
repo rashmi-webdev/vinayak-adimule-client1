@@ -15,9 +15,9 @@ class NavBar extends React.Component {
     const { navBarData } = this.state;
     return (
       <>
-        <nav className="header-nav nav-wrapper">
+        <nav className="header-nav nav-wrapper" id="top">
           <div className="logo-container">
-            <img src="/images/old-logo.svg" alt="" />
+            <img src="/images/logo-light-bg.svg" alt="" />
           </div>
           <ul>
             {navBarData.map(({ id, href, displayName }) => (
