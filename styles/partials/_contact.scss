@@ -2,5 +2,55 @@
   height: 540px;
   background: rgba(0, 0, 0, 0.5) url("/images/contact-hero2.jpg") no-repeat;
   background-size: cover;
-  background-position: 0 10%;
+  background-position: 0 0%;
+}
+
+.contact-card-container {
+  padding: 64px 0;
+}
+
+.white-contact-card {
+  padding: 18px 135px 55px;
+  background: $text;
+  margin: 0 auto;
+  width: 80%;
+  max-width: 736px;
+  h1 {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  ol {
+    list-style-position: inside;
+  }
+  p {
+    margin-bottom: 12px;
+  }
+  label {
+    text-transform: uppercase;
+    color: $accent-text;
+    margin-bottom: 10px;
+    font-weight: 600;
+    font-size: 1.25rem;
+    &:first-child {
+      margin-top: 30px;
+    }
+  }
+  .personal-input {
+    display: flex;
+    flex-direction: column;
+  }
+  input,
+  textarea {
+    margin-bottom: 30px;
+  }
+  .form-submit {
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
 }
