@@ -146,7 +146,9 @@ export default function Home() {
               </li>
               <li>
                 <FontAwesomeIcon aria-hidden="true" icon={faExpand} />
-                <p>RWD</p>
+                <p>
+                  <abbr title="Responsive Web Design">RWD</abbr>
+                </p>
               </li>
               <li>
                 <FontAwesomeIcon aria-hidden="true" icon={faAccessibleIcon} />
