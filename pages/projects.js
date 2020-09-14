@@ -9,7 +9,7 @@ class Projects extends React.Component {
     super();
     this.state = {
       projectsData: PROJECTS_DATA,
-      currentFilter: "Vue.js",
+      currentFilter: "ALL",
       skillsList: [
         {
           id: 1,
@@ -59,14 +59,15 @@ class Projects extends React.Component {
     };
   }
   filterSkill = (e) => {
-    console.log(e.target.value);
     this.setState({ currentFilter: e.target.value });
   };
+
   render() {
     const { projectsData, currentFilter, skillsList } = this.state;
     const filteredProjects = projectsData.filter((project) =>
       project.skills.includes(currentFilter)
     );
+    const allProjects = projectsData;
     return (
       <>
         <Layout>
@@ -88,13 +89,23 @@ class Projects extends React.Component {
               ))}
             </ul>
 
-            <div className="project-card-list">
-              {filteredProjects.map((project) => (
-                <div className="card" key={project.id}>
-                  <p>{project.title}</p>
-                </div>
-              ))}
-            </div>
+            {currentFilter == "ALL" ? (
+              <div className="project-card-list">
+                {allProjects.map((project) => (
+                  <div className="card" key={project.id}>
+                    <p>{project.title}</p>
+                  </div>
+                ))}
+              </div>
+            ) : (
+              <div className="project-card-list">
+                {filteredProjects.map((project) => (
+                  <div className="card" key={project.id}>
+                    <p>{project.title}</p>
+                  </div>
+                ))}
+              </div>
+            )}
           </section>
         </Layout>
       </>
