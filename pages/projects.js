@@ -13,54 +13,53 @@ class Projects extends React.Component {
       skillsList: [
         {
           id: 1,
-          skill: "ALL",
+          name: "ALL",
         },
         {
           id: 2,
-          skill: "React.js",
+          name: "React.js",
         },
         {
           id: 3,
-          skill: "Vue.js",
+          name: "Vue.js",
         },
         {
           id: 4,
-          skill: "Bootstrap",
+          name: "Bootstrap",
         },
         {
           id: 5,
-          skill: "JavaScript",
+          name: "JavaScript",
         },
         {
           id: 6,
-          skill: "HTML5",
+          name: "HTML5",
         },
         {
           id: 7,
-          skill: "CSS3",
+          name: "CSS3",
         },
         {
           id: 8,
-          skill: "LESS",
+          name: "LESS",
         },
         {
           id: 9,
-          skill: "SASS/SCSS",
+          name: "SASS/SCSS",
         },
         {
           id: 10,
-          skill: "Mobile First",
+          name: "Mobile First",
         },
         {
           id: 11,
-          skill: "RESTful API",
+          name: "RESTful API",
         },
       ],
     };
   }
   filterSkill = (e) => {
     console.log(e.target.value);
-    //target innerHTML as new currentFilter
     this.setState({ currentFilter: e.target.value });
   };
   render() {
@@ -80,11 +79,11 @@ class Projects extends React.Component {
             <ul className="skills-list">
               {skillsList.map((skill) => (
                 <button
-                  onClick={(e) => this.filterSkill(e)}
+                  onClick={this.filterSkill}
                   key={skill.id}
-                  value={skill.skill}
+                  value={skill.name}
                 >
-                  {skill.skill}
+                  {skill.name}
                 </button>
               ))}
             </ul>
