@@ -53,10 +53,10 @@ class Projects extends React.Component {
           id: 10,
           name: "Mobile First",
         },
-        {
-          id: 11,
-          name: "RESTful API",
-        },
+        // {
+        //   id: 11,
+        //   name: "RESTful API",
+        // },
       ],
     };
   }
@@ -85,6 +85,9 @@ class Projects extends React.Component {
                   onClick={this.filterSkill}
                   key={skill.id}
                   value={skill.name}
+                  className={`${
+                    currentFilter == skill.name ? "active-btn" : ""
+                  }`}
                 >
                   {skill.name}
                 </button>

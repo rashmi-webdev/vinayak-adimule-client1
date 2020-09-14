@@ -5,7 +5,7 @@ import Head from "next/head";
 import NavBar from "../navigation/nav-bar-component";
 
 import PersistFooter from "../footer/footer-component";
-import SeeMoreProjects from "../see-more/see-more-projects.component";
+import ConditionalCTA from "../see-more/see-more-projects.component";
 
 const name = "Irene Truong";
 export const siteTitle = "Irene Truong | Web Developer";
@@ -66,7 +66,7 @@ export default function Layout({ children, home, contact }) {
         )} */}
       </header>
       <main>{children}</main>
-      {!contact && <SeeMoreProjects />}
+      {!contact && <ConditionalCTA />}
       {/* </div> */}
       <PersistFooter />
     </>

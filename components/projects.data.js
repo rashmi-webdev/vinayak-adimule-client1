@@ -76,7 +76,7 @@ const PROJECTS_DATA = [
     imagePath: "/images/project-previews/Bookstore.jpg",
     description:
       "A CRUD application built using React, React Router, and Redux.",
-    skills: ["React.js", "Redux", "SCSS/SASS", "Responsive Web Design"],
+    skills: ["React.js", "Redux", "SASS/SCSS", "Responsive Web Design"],
     liveUrl: "https://irenecodes.github.io/bookstore/#/",
     githubUrl: "https://github.com/irenecodes/bookstore",
   },
@@ -86,7 +86,7 @@ const PROJECTS_DATA = [
     imagePath: "/images/project-previews/PetLims.jpg",
     description:
       "jQuery Quiz to find out how many pets you can own dependent on your location in the GTA. ",
-    skills: ["HTML5", "CSS3", "SCSS/SASS", "jQuery", "Responsive Web Design"],
+    skills: ["HTML5", "CSS3", "SASS/SCSS", "jQuery", "Responsive Web Design"],
     liveUrl: "https://irenecodes.github.io/Pet-Lims/",
     githubUrl: "https://github.com/irenecodes/Pet-Lims",
   },
@@ -96,7 +96,7 @@ const PROJECTS_DATA = [
     imagePath: "/images/project-previews/KeyboardWarrior.jpg",
     description:
       "A speed-typing game in vanilla JavaScript. Utilizes Bootstrap 4 for responsiveness.",
-    skills: ["HTML5", "CSS3", "SCSS/SASS", "Bootstrap", "JavaScript"],
+    skills: ["HTML5", "CSS3", "SASS/SCSS", "Bootstrap", "JavaScript"],
     liveUrl: "https://irenecodes.github.io/keyboard-warrior/",
     githubUrl: "https://github.com/irenecodes/keyboard-warrior",
   },
@@ -106,7 +106,7 @@ const PROJECTS_DATA = [
     imagePath: "/images/project-previews/QuoteGenerator.jpg",
     description:
       "Randomly generate a quote to display from Quotable API. Tweet the quote if it's to your liking!",
-    skills: ["HTML5", "CSS3", "SCSS/SASS", "JavaScript"],
+    skills: ["HTML5", "CSS3", "SASS/SCSS", "JavaScript"],
     liveUrl: "https://irenecodes.github.io/quote-generator/",
     githubUrl: "https://github.com/irenecodes/quote-generator",
   },
@@ -119,7 +119,7 @@ const PROJECTS_DATA = [
     skills: [
       "React.js",
       "CSS3",
-      "SCSS/SASS",
+      "SASS/SCSS",
       "JavaScript",
       "Firebase",
       "Responsive Web Design",
@@ -136,7 +136,7 @@ const PROJECTS_DATA = [
     skills: [
       "HTML5",
       "CSS3",
-      "SCSS/SASS",
+      "SASS/SCSS",
       "JavaScript",
       "jQuery",
       "RESTful API",

@@ -21,6 +21,12 @@
   button {
     background: none;
     border: none;
+    border-bottom: 1px solid transparent;
+  }
+  .active-btn {
+    font-weight: bold;
+    color: $accent-text;
+    border-bottom: 2px solid $accent-text;
   }
 }
 
