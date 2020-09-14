@@ -1,9 +1,11 @@
 import Head from "next/head";
 // import Link from "next/link";
 
-// import components that persist
-import NavBar from "../navigation/nav-bar-component";
+import Transition from "../Transition";
+import { useRouter } from "next/router";
 
+// components
+import NavBar from "../navigation/nav-bar-component";
 import PersistFooter from "../footer/footer-component";
 import ConditionalCTA from "../see-more/see-more-projects.component";
 
@@ -11,6 +13,7 @@ const name = "Irene Truong";
 export const siteTitle = "Irene Truong | Web Developer";
 
 export default function Layout({ children, home, contact }) {
+  const router = useRouter();
   return (
     // <div className={styles.container}>
     <>
@@ -65,8 +68,11 @@ export default function Layout({ children, home, contact }) {
           </>
         )} */}
       </header>
-      <main>{children}</main>
-      {!contact && <ConditionalCTA />}
+      <Transition location={router.pathname}>
+        <main>{children}</main>
+        {!contact && <ConditionalCTA />}
+      </Transition>
+
       {/* </div> */}
       <PersistFooter />
     </>
