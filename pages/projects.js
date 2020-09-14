@@ -8,7 +8,10 @@ export default function Projects() {
         <title>Irene Truong | Projects</title>
       </Head>
 
-      <main>projects page</main>
+      <section className="projects-container">
+        <h1>Projects</h1>
+        <p></p>
+      </section>
     </Layout>
   );
 }
