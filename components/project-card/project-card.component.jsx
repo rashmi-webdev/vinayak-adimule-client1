@@ -2,7 +2,10 @@ export default function ProjectCard(props) {
   return (
     <>
       <div className="card" key={props.project.id}>
-        <img src={props.project.imagePath} alt="" />
+        <img
+          src={props.project.imagePath}
+          alt={`Preview image of ${props.project.title}.`}
+        />
         <div className="copy">
           <h3>{props.project.title}</h3>
           <div className="project-description">

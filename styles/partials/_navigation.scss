@@ -5,13 +5,10 @@ header {
 }
 
 .header-nav {
-  // position: fixed;
   margin-top: 54px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  //   width: 100%;
-  //   background: #000;
   .logo-container {
     width: 64px;
     height: 64px;
@@ -29,24 +26,17 @@ header {
       padding-bottom: 10px;
       cursor: pointer;
       position: relative;
-      &:before {
-        content: "";
-        position: absolute;
-        height: 1px;
-        transition: 0.3s ease;
-        background: transparent;
-        width: 50px;
-        bottom: 0px;
-        //   left:0%;
-        //   right: 51%;
-      }
-      &:active:before,
-      &:focus:before,
-      &:hover:before {
-        left: 0;
-        right: 0;
-        background: $text;
-      }
+      color: $main-text;
     }
+  }
+  .selected {
+    border-bottom: 2px solid $text;
+  }
+}
+
+.lighten-nav {
+  .selected {
+    color: $accent-text;
+    border-bottom: 2px solid $accent-text;
   }
 }

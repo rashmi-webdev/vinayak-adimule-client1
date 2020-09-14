@@ -98,7 +98,7 @@ export default function Home() {
           </p>
         </div>
       </section>
-      <section className="skills-background">
+      <section className="grey-background">
         <div className={homeStyles.skills}>
           <div className="current">
             <h2>Fluent in</h2>

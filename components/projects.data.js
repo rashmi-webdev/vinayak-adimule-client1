@@ -26,6 +26,15 @@ const PROJECTS_DATA = [
   //   liveUrl: "https://www.insightvacations.com/us/uplift",
   // },
   {
+    id: 13,
+    title: "Irene Truong Portfolio",
+    imagePath: "/images/project-previews/ITPortfolioTwo.jpg",
+    description:
+      "This very site! I wanted to build from what I've learned over the years. Feel free to view the source code and what my mind decided to refactor as I went along with the build.",
+    skills: ["React.js", "Next.js", "SASS/SCSS", "Responsive Web Design"],
+    githubUrl: "https://github.com/irenecodes/irene-portfolio-next",
+  },
+  {
     id: 3,
     title: "Personal Date Night",
     imagePath: "/images/project-previews/PersonalDateNight.jpg",
@@ -147,15 +156,6 @@ const PROJECTS_DATA = [
       "https://the-best-doduo.github.io/harry-grewal-irene-truong-project-4/",
     githubUrl:
       "https://github.com/the-best-doduo/harry-grewal-irene-truong-project-4",
-  },
-  {
-    id: 13,
-    title: "Irene Truong Portfolio",
-    imagePath: "/images/project-previews/ITPortfolio.jpg",
-    description:
-      "This very site! I wanted to build from what I've learned over the years. Feel free to view the source code and what my mind decided to refactor as I went along with the build.",
-    skills: ["React.js", "Next.js", "SASS/SCSS", "Responsive Web Design"],
-    githubUrl: "https://github.com/irenecodes/irene-portfolio-next",
   },
 ];
 
