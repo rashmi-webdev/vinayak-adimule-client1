@@ -4,6 +4,8 @@ import Layout from "../components/layout/layout-component";
 // import data
 import PROJECTS_DATA from "../components/projects.data";
 
+import ProjectCard from "../components/project-card/project-card.component";
+
 class Projects extends React.Component {
   constructor() {
     super();
@@ -92,17 +94,13 @@ class Projects extends React.Component {
             {currentFilter == "ALL" ? (
               <div className="project-card-list">
                 {allProjects.map((project) => (
-                  <div className="card" key={project.id}>
-                    <p>{project.title}</p>
-                  </div>
+                  <ProjectCard key={project.id} project={project} />
                 ))}
               </div>
             ) : (
               <div className="project-card-list">
                 {filteredProjects.map((project) => (
-                  <div className="card" key={project.id}>
-                    <p>{project.title}</p>
-                  </div>
+                  <ProjectCard key={project.id} project={project} />
                 ))}
               </div>
             )}
