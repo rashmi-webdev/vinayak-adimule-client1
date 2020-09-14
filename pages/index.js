@@ -40,7 +40,7 @@ export default function Home() {
         <title>Irene Truong | Web Developer</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <section class={homeStyles.heroBackground}>
+      <section className={homeStyles.heroBackground}>
         {/* <div className="hero-image"> */}
         <div className="wrapper">
           <h1>

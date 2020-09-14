@@ -9,7 +9,7 @@ export default function Contact() {
       </Head>
 
       <div className="contact-hero"></div>
-      <section class="grey-background contact-card-container">
+      <section className="grey-background contact-card-container">
         <div className="white-contact-card ">
           <h1>Contact</h1>
           <p>Feel free to contact me if:</p>
@@ -34,30 +34,30 @@ export default function Contact() {
           <form
             action="https://formspree.io/itruong25.it@gmail.com"
             method="POST"
-            autocomplete="off"
+            autoComplete="off"
             name="contact-form"
           >
             <fieldset>
-              <legend class="visuallyHidden">
+              <legend className="visuallyHidden">
                 Please fill out all inputs of the following form if you'd like
                 to get in touch.
               </legend>
-              <div class="personal-input">
-                <label for="name"> Name</label>
-                <input type="name" required="true" id="name" name="name" />
+              <div className="personal-input">
+                <label htmlFor="name"> Name</label>
+                <input type="name" required id="name" name="name" />
 
-                <label for="email-address">Email</label>
+                <label htmlFor="email-address">Email</label>
                 <input
                   type="email"
-                  required="true"
+                  required
                   id="email-address"
                   name="_replyto"
                 />
-                <label for="message">Message</label>
+                <label htmlFor="message">Message</label>
                 <textarea
                   name="message"
                   id="message"
-                  required="true"
+                  required
                   cols="30"
                   rows="10"
                   name="message"
