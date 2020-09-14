@@ -29,7 +29,6 @@ import Link from "next/link";
 
 // importing components
 import SocialIcons from "../components/social-icons/social-icons-component";
-// import SeeMoreProjects from "../components/see-more/see-more-projects.component";
 
 // importing styles
 import homeStyles from "../styles/Home.module.scss";

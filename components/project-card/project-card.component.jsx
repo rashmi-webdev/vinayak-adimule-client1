@@ -13,7 +13,7 @@ export default function ProjectCard(props) {
             </p>
           </div>
         </div>
-        {props.project.githubUrl ? (
+        {props.project.liveUrl && props.project.githubUrl ? (
           <div className="button-positioning">
             <div className="button-container">
               <a
@@ -34,7 +34,7 @@ export default function ProjectCard(props) {
               </a>
             </div>
           </div>
-        ) : (
+        ) : !props.project.githubUrl ? (
           <div className="button-positioning">
             <div className="button-container">
               <a
@@ -44,6 +44,19 @@ export default function ProjectCard(props) {
                 href={props.project.liveUrl}
               >
                 View live
+              </a>
+            </div>
+          </div>
+        ) : (
+          <div className="button-positioning">
+            <div className="button-container">
+              <a
+                className="btn-secondary"
+                target="_blank"
+                rel="noopener noreferrer"
+                href={props.project.githubUrl}
+              >
+                Source code
               </a>
             </div>
           </div>

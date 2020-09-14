@@ -148,6 +148,15 @@ const PROJECTS_DATA = [
     githubUrl:
       "https://github.com/the-best-doduo/harry-grewal-irene-truong-project-4",
   },
+  {
+    id: 13,
+    title: "Irene Truong Portfolio",
+    imagePath: "/images/project-previews/ITPortfolio.jpg",
+    description:
+      "This very site! I wanted to build from what I've learned over the years. Feel free to view the source code and what my mind decided to refactor as I went along with the build.",
+    skills: ["React.js", "Next.js", "SASS/SCSS", "Responsive Web Design"],
+    githubUrl: "https://github.com/irenecodes/irene-portfolio-next",
+  },
 ];
 
 export default PROJECTS_DATA;
