@@ -38,7 +38,7 @@ export default function Layout({ children, home, contact }) {
       </header>
 
       <motion.div
-        exit={{ opacity: 0 }}
+        exit={{ opacity: 1 }}
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
       >
