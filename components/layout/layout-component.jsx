@@ -5,7 +5,7 @@ import { useRouter } from "next/router";
 // components
 import NavBar from "../navigation/nav-bar-component";
 import PersistFooter from "../footer/footer-component";
-import ConditionalCTA from "../see-more/see-more-projects.component";
+import ConditionalCTA from "../conditionalCTA/conditional-cta.component";
 
 const name = "Irene Truong";
 const description =

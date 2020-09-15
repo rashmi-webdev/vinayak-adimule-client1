@@ -23,7 +23,14 @@ const PROJECTS_DATA = [
     imagePath: "/images/project-previews/ITPortfolioTwo.jpg",
     description:
       "This site! I wanted to build from scratch what I've learned over the years. Designed by <a href='https://joeyhua.com' target='_blank' rel='noopener noreferrer'>Joey Hua, UX Designer</a>. Feel free to view the source code to see how I decided to refactor as I went along with the build.",
-    skills: ["React.js", "Next.js", "SASS/SCSS", "Responsive Web Design"],
+    skills: [
+      "React.js",
+      "Next.js",
+      "SASS/SCSS",
+      "JavaScript",
+      "Responsive Web Design",
+      "Figma (asset edits and slicing)",
+    ],
     githubUrl: "https://github.com/irenecodes/irene-portfolio-next",
   },
   // {
@@ -75,7 +82,8 @@ const PROJECTS_DATA = [
     id: 7,
     title: "Single Page PSD Conversion - HackerYou Landing Page",
     imagePath: "/images/project-previews/HackerYouLP.jpg",
-    description: "PSD to HTML/CSS Conversion. Design provided by HackerYou.",
+    description:
+      "PSD to HTML/CSS Conversion. Desktop design provided by HackerYou.",
     skills: ["HTML5", "CSS3", "Responsive Web Design"],
     liveUrl: "https://irenecodes.github.io/psd-conversion-challenge/",
     githubUrl: "https://github.com/irenecodes/psd-conversion-challenge",
@@ -86,7 +94,13 @@ const PROJECTS_DATA = [
     imagePath: "/images/project-previews/Bookstore.jpg",
     description:
       "A CRUD application built using React, React Router, and Redux.",
-    skills: ["React.js", "Redux", "SASS/SCSS", "Responsive Web Design"],
+    skills: [
+      "React.js",
+      "Redux",
+      "SASS/SCSS",
+      "JavaScript",
+      "Responsive Web Design",
+    ],
     liveUrl: "https://irenecodes.github.io/bookstore/#/",
     githubUrl: "https://github.com/irenecodes/bookstore",
   },
@@ -96,7 +110,14 @@ const PROJECTS_DATA = [
     imagePath: "/images/project-previews/PetLims.jpg",
     description:
       "jQuery Quiz to find out how many pets you can own dependent on your location in the GTA. ",
-    skills: ["HTML5", "CSS3", "SASS/SCSS", "jQuery", "Responsive Web Design"],
+    skills: [
+      "HTML5",
+      "CSS3",
+      "SASS/SCSS",
+      "JavaScript",
+      "jQuery",
+      "Responsive Web Design",
+    ],
     liveUrl: "https://irenecodes.github.io/Pet-Lims/",
     githubUrl: "https://github.com/irenecodes/Pet-Lims",
   },
