@@ -7,4 +7,4 @@ Hello! Thank you for visiting my portfolio site.
 Some features I'm proud of:
 
 - Active classes for navigation and project skill filter
-- A smooth-as-butter fade transition between pages
+- 404 page if you try to go to a non-existing page
