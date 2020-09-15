@@ -90,6 +90,20 @@
     .card {
       flex: 0 0 100%;
     }
+    .button-positioning {
+      position: initial;
+      width: 100%;
+    }
+    .copy {
+      min-height: initial;
+    }
+    .button-container {
+      justify-content: space-evenly;
+      padding-bottom: 30px;
+    }
+    .tech-used {
+      margin-bottom: 0;
+    }
   }
   .skills-list {
     flex-wrap: wrap;
@@ -110,11 +124,9 @@
 
   .project-card-list {
     .copy {
-      padding: 30px 20px;
-      min-height: 480px;
+      padding: 20px;
     }
     .button-positioning {
-      left: 20px;
       .btn-secondary {
         padding: 8px 4px;
         // margin: 0 5px;

@@ -69,9 +69,9 @@ export default function ConditionalCTA() {
             <p>Back to top</p>
           </a>
         </aside>
-      ) : (
+      ) : router.pathname == "/contact" ? (
         <aside>
-          <h3>Thanks for visiting! Want a second glance?</h3>
+          <h3>Thanks for visiting! Want to check it out again? 😉</h3>
           <Link href="/">
             <a className="btn-primary">Go to Home Page</a>
           </Link>
@@ -85,7 +85,7 @@ export default function ConditionalCTA() {
             <p>Back to top</p>
           </a>
         </aside>
-      )}
+      ) : null}
     </>
   );
 }

@@ -248,3 +248,11 @@ aside {
     }
   }
 }
+
+@media (max-width: 360px) {
+  .error-section {
+    h1 {
+      margin-top: 60px;
+    }
+  }
+}

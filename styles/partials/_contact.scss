@@ -61,8 +61,12 @@ fieldset {
 }
 
 @media (max-width: 768px) {
+  .white-contact-card {
+    padding: 18px 55px 55px;
+  }
   .contact-hero {
-    opacity: 0.55;
+    opacity: 0.35;
+    height: 150px;
   }
 }
 
