@@ -7,6 +7,8 @@ import NavBar from "../navigation/nav-bar-component";
 import PersistFooter from "../footer/footer-component";
 import ConditionalCTA from "../see-more/see-more-projects.component";
 
+// import { motion } from "framer-motion";
+
 const name = "Irene Truong";
 const description =
   "Irene Truong is a Web Developer specializing in Front-End servicing the Toronto and Greater Toronto Area.";
@@ -37,6 +39,9 @@ export default function Layout({ children }) {
       </header>
 
       <main>{children}</main>
+      {/* <motion.main initial={{ x: "-100vw" }} animate={{ x: "0" }}>
+        {children}
+      </motion.main> */}
 
       <ConditionalCTA />
       <PersistFooter />

@@ -70,7 +70,7 @@ export default function Custom404() {
             width="490"
             height="685"
             stroke="#1C2C63"
-            stroke-width="2"
+            strokeWidth="2"
           ></motion.rect>
           <rect
             x="76"
@@ -78,7 +78,7 @@ export default function Custom404() {
             width="490"
             height="684"
             stroke="#FFAB5C"
-            stroke-width="2"
+            strokeWidth="2"
           />
           <motion.rect
             variants={pathVariants2}
@@ -90,7 +90,7 @@ export default function Custom404() {
             height="684.341"
             transform="rotate(12.5709 198.173 46.1937)"
             stroke="#0D8274"
-            stroke-width="2"
+            strokeWidth="2"
           ></motion.rect>
         </motion.svg>
         <motion.div animate={{ y: 50 }} className="error-content">
