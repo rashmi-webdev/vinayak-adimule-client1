@@ -29,7 +29,8 @@ import homeStyles from "../styles/Home.module.scss";
 
 export default function Home() {
   return (
-    <Layout home>
+    // <Layout home>
+    <>
       <Head>
         <title>Irene Truong | Web Developer</title>
         <link rel="icon" href="images/favicon.ico" />
@@ -194,6 +195,7 @@ export default function Home() {
           </a>
         </div>
       </section>
-    </Layout>
+      {/* </Layout> */}
+    </>
   );
 }

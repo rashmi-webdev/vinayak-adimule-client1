@@ -72,43 +72,41 @@ class Projects extends React.Component {
     const allProjects = projectsData;
     return (
       <>
-        <Layout>
-          <Head>
-            <title>Irene Truong | Projects</title>
-          </Head>
+        {/* <Layout> */}
+        <Head>
+          <title>Irene Truong | Projects</title>
+        </Head>
 
-          <section className="projects-container">
-            <h1>Projects</h1>
-            <ul className="skills-list">
-              {skillsList.map((skill) => (
-                <button
-                  onClick={this.filterSkill}
-                  key={skill.id}
-                  value={skill.name}
-                  className={`${
-                    currentFilter == skill.name ? "active-btn" : ""
-                  }`}
-                >
-                  {skill.name}
-                </button>
+        <section className="projects-container">
+          <h1>Projects</h1>
+          <ul className="skills-list">
+            {skillsList.map((skill) => (
+              <button
+                onClick={this.filterSkill}
+                key={skill.id}
+                value={skill.name}
+                className={`${currentFilter == skill.name ? "active-btn" : ""}`}
+              >
+                {skill.name}
+              </button>
+            ))}
+          </ul>
+
+          {currentFilter == "ALL" ? (
+            <div className="project-card-list">
+              {allProjects.map((project) => (
+                <ProjectCard key={project.id} project={project} />
               ))}
-            </ul>
-
-            {currentFilter == "ALL" ? (
-              <div className="project-card-list">
-                {allProjects.map((project) => (
-                  <ProjectCard key={project.id} project={project} />
-                ))}
-              </div>
-            ) : (
-              <div className="project-card-list">
-                {filteredProjects.map((project) => (
-                  <ProjectCard key={project.id} project={project} />
-                ))}
-              </div>
-            )}
-          </section>
-        </Layout>
+            </div>
+          ) : (
+            <div className="project-card-list">
+              {filteredProjects.map((project) => (
+                <ProjectCard key={project.id} project={project} />
+              ))}
+            </div>
+          )}
+        </section>
+        {/* </Layout> */}
       </>
     );
   }

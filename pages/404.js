@@ -4,7 +4,7 @@ import Layout from "../components/layout/layout-component";
 
 export default function Custom404() {
   return (
-    <Layout contact>
+    // <Layout>
       <Head>
         <title>Irene Truong | Web Developer</title>
       </Head>
@@ -14,6 +14,6 @@ export default function Custom404() {
           <a className="btn-primary">Go to Home Page</a>
         </Link>
       </section>
-    </Layout>
+    // </Layout>
   );
 }

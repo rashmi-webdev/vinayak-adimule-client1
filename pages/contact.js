@@ -3,7 +3,8 @@ import Layout from "../components/layout/layout-component";
 
 export default function Contact() {
   return (
-    <Layout contact>
+    // <Layout contact>
+    <>
       <Head>
         <title>Irene Truong | Contact</title>
       </Head>
@@ -71,6 +72,7 @@ export default function Contact() {
           </form>
         </div>
       </section>
-    </Layout>
+      {/* </Layout> */}
+    </>
   );
 }

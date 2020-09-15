@@ -53,11 +53,27 @@ export default function ConditionalCTA() {
             <p>Back to top</p>
           </a>
         </aside>
-      ) : (
+      ) : router.pathname == "/projects" ? (
         <aside className="grey-background">
           <h3>Want to get in touch?</h3>
           <Link href="/contact">
             <a className="btn-primary">Contact me</a>
+          </Link>
+
+          <a href="#top" className="top" aria-label="Click to scroll to top">
+            {isMobile ? (
+              <img src="/images/white-arrow.svg" alt="" className="arrow" />
+            ) : (
+              <img src="/images/navy-arrow.svg" alt="" className="arrow" />
+            )}
+            <p>Back to top</p>
+          </a>
+        </aside>
+      ) : (
+        <aside>
+          <h3>Thanks for visiting! Want a second glance?</h3>
+          <Link href="/">
+            <a className="btn-primary">Go to Home Page</a>
           </Link>
 
           <a href="#top" className="top" aria-label="Click to scroll to top">

@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Transition from "../Transition";
 import { useRouter } from "next/router";
 
 // components
@@ -11,7 +12,7 @@ const description =
   "Irene Truong is a Web Developer specializing in Front-End servicing the Toronto and Greater Toronto Area.";
 export const siteTitle = "Irene Truong | Web Developer";
 
-export default function Layout({ children, home, contact }) {
+export default function Layout({ children }) {
   const router = useRouter();
   return (
     <>
@@ -30,13 +31,15 @@ export default function Layout({ children, home, contact }) {
         <meta name="twitter:card" content="summary_large_image" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+
       <header id="top">
         <NavBar />
       </header>
 
-      <main>{children}</main>
-
-      {!contact && <ConditionalCTA />}
+      <Transition location={router.pathname}>
+        <main>{children}</main>
+      </Transition>
+      <ConditionalCTA />
       <PersistFooter />
     </>
   );
