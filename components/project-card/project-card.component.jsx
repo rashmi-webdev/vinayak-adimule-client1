@@ -4,7 +4,7 @@ export default function ProjectCard(props) {
   return (
     <>
       <motion.div
-        initial={{ x: 100, opacity: 0 }}
+        initial={{ x: 5, opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
         exit={{ opacity: 0 }}
         className="card"
