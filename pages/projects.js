@@ -8,6 +8,8 @@ const ProjectCard = loadable(() =>
   import("../components/project-card/project-card.component")
 );
 
+import { motion } from "framer-motion";
+
 class Projects extends React.Component {
   constructor() {
     super();
@@ -63,6 +65,48 @@ class Projects extends React.Component {
   };
 
   render() {
+    const svgVariants = {
+      hidden: {
+        x: -10,
+      },
+      visible: {
+        x: 0,
+      },
+      transition: { duration: 3 },
+    };
+
+    const pathVariants = {
+      // initial state
+      hidden: {
+        opacity: 0,
+        pathLength: 0,
+      },
+      visible: {
+        opacity: 1,
+        pathLength: 1,
+        transition: {
+          duration: 3,
+          ease: "easeInOut",
+        },
+      },
+    };
+
+    const pathVariants2 = {
+      // initial state
+      hidden: {
+        opacity: 0,
+        pathLength: 0,
+      },
+      visible: {
+        opacity: 1,
+        pathLength: 1,
+        transition: {
+          duration: 2,
+          ease: "easeInOut",
+        },
+      },
+    };
+
     const { projectsData, currentFilter, skillsList } = this.state;
     const filteredProjects = projectsData.filter((project) =>
       project.skills.includes(currentFilter)
@@ -75,6 +119,48 @@ class Projects extends React.Component {
         </Head>
 
         <section className="projects-container">
+          <motion.svg
+            variants={svgVariants}
+            initial="hidden"
+            animate="visible"
+            width="583"
+            height="856"
+            viewBox="0 0 783 856"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <motion.rect
+              variants={pathVariants}
+              initial="hidden"
+              animate="visible"
+              x="38"
+              y="50"
+              width="490"
+              height="685"
+              stroke="#1C2C63"
+              stroke-width="2"
+            ></motion.rect>
+            <rect
+              x="76"
+              y="90"
+              width="490"
+              height="684"
+              stroke="#FFAB5C"
+              stroke-width="2"
+            />
+            <motion.rect
+              variants={pathVariants2}
+              initial="hidden"
+              animate="visible"
+              x="198.173"
+              y="46.1937"
+              width="490.136"
+              height="684.341"
+              transform="rotate(12.5709 198.173 46.1937)"
+              stroke="#0D8274"
+              stroke-width="2"
+            ></motion.rect>
+          </motion.svg>
           <h1>Projects</h1>
           <ul className="skills-list">
             {skillsList.map((skill) => (

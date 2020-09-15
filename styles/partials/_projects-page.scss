@@ -1,11 +1,13 @@
 .projects-container {
-  background: #fff url("/images/projects-bg.jpg") no-repeat;
-  background-size: contain;
-  background-position: 0 100px;
-  background-attachment: fixed;
+  position: relative;
+  overflow: hidden;
   h1 {
     text-align: center;
     padding: 174px 0 64px;
+  }
+  svg {
+    position: absolute;
+    z-index: -1;
   }
 }
 
