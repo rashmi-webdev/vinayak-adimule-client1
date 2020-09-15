@@ -15,7 +15,7 @@ export default function ProjectCard(props) {
           alt={`Preview image of ${props.project.title}.`}
         />
         <div className="copy">
-          <h3>{props.project.title}</h3>
+          <h2>{props.project.title}</h2>
           <div className="project-description">
             <p
               dangerouslySetInnerHTML={{
