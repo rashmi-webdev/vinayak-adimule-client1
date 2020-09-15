@@ -10,13 +10,15 @@ export default function NavBar(props) {
   const [navBarData, setNavBarData] = useState(NAV_BAR_DATA);
   return (
     <nav className="header-nav nav-wrapper">
-      <div className="logo-container">
-        {router.pathname == "/contact" ? (
-          <img src="/images/logoOnContact.svg" alt="" />
-        ) : (
-          <img src="/images/logo-light-bg.svg" alt="" />
-        )}
-      </div>
+      <Link href="/">
+        <div className="logo-container">
+          {router.pathname == "/contact" ? (
+            <img src="/images/logoOnContact.svg" alt="Irene Truong's logo." />
+          ) : (
+            <img src="/images/logo-light-bg.svg" alt="Irene Truong's logo." />
+          )}
+        </div>
+      </Link>
 
       <ul className={`${router.pathname !== "/" ? "lighten-nav" : ""}`}>
         {navBarData.map(({ id, href, displayName }) => (

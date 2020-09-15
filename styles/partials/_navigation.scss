@@ -40,3 +40,27 @@ header {
     border-bottom: 2px solid $accent-text;
   }
 }
+
+@media (max-width: 768px) {
+  .header-nav {
+    ul {
+      flex: 0 0 40%;
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .header-nav {
+    .logo-container {
+      width: 56px;
+      height: 56px;
+    }
+    ul {
+      flex: 0 0 70%;
+      justify-content: space-around;
+      li:first-child {
+        display: none;
+      }
+    }
+  }
+}

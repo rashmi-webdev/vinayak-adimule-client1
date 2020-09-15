@@ -2,7 +2,7 @@
 
 .heroBackground {
   height: 900px;
-  background: rgba(0, 0, 0, 0.5) url("/images/hero.jpg") no-repeat;
+  background: $dark-main url("/images/hero.jpg") no-repeat;
   background-size: cover;
   background-position: center;
   position: relative;
@@ -45,4 +45,50 @@
   display: flex;
   padding: 55px 0;
   text-align: center;
+}
+
+@media (max-width: 768px) {
+  .heroBackground {
+    height: unset;
+    background-position: 80%;
+    h1 {
+      max-width: 60%;
+    }
+  }
+  .about {
+    padding: 55px 0;
+    .portraitContainer {
+      flex: 0 0 calc(50% - 48px);
+      margin-right: 48px;
+      align-self: center;
+    }
+    p:last-child {
+      margin-bottom: 0;
+    }
+  }
+  .skills {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 450px) {
+  .heroBackground {
+    background-position: 60%;
+    margin-bottom: 40px;
+    h1 {
+      max-width: 100%;
+      padding-top: 180px;
+    }
+  }
+  .socialContainer {
+    margin-top: 20px;
+    padding-bottom: 120px;
+  }
+
+  .about {
+    flex-direction: column;
+    .portraitContainer {
+      margin-right: 0;
+    }
+  }
 }

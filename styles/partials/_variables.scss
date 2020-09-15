@@ -40,3 +40,37 @@ $white: #ffffff;
   width: 90%;
   margin: 0 auto;
 }
+
+// font-size
+@mixin desktopHeading1 {
+  font-weight: 600;
+  font-size: 2.75rem;
+  line-height: 66px;
+  span {
+    color: $white;
+  }
+}
+
+@mixin desktopHeading2 {
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 48px;
+}
+
+@mixin desktopHeading3 {
+  font-weight: bold;
+  font-size: 1.5rem;
+  line-height: 36px;
+}
+
+@mixin desktopHeading4 {
+  font-weight: 600;
+  font-size: 1.125rem;
+  line-height: 27px;
+}
+
+@mixin desktopHeading5 {
+  font-weight: 600;
+  font-size: 1.1rem;
+  line-height: 26px;
+}

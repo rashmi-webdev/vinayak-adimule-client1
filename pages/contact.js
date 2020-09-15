@@ -12,7 +12,7 @@ export default function Contact() {
       <section className="grey-background contact-card-container">
         <div className="white-contact-card ">
           <h1>Contact</h1>
-          <p>Feel free to contact me if:</p>
+          {/* <p>Feel free to contact me if:</p>
           <ol>
             <li>You'd like to work together.</li>
             <li>You'd like to hire me.</li>
@@ -29,7 +29,7 @@ export default function Contact() {
               I'd like to think I'm friendly, so in general, feel free to get in
               touch!
             </li>
-          </ol>
+          </ol> */}
 
           <form
             action="https://formspree.io/itruong25.it@gmail.com"

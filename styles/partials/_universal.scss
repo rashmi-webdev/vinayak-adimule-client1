@@ -54,30 +54,19 @@ img {
 
 // heading styles
 h1 {
-  font-weight: 600;
-  font-size: 2.75rem;
-  line-height: 66px;
-  span {
-    color: $white;
-  }
+  @include desktopHeading1;
 }
 
 h2 {
-  font-weight: 500;
-  font-size: 2rem;
-  line-height: 48px;
+  @include desktopHeading2;
 }
 
 h3 {
-  font-weight: bold;
-  font-size: 1.5rem;
-  line-height: 36px;
+  @include desktopHeading3;
 }
 
 h4 {
-  font-weight: 600;
-  font-size: 1.125rem;
-  line-height: 27px;
+  @include desktopHeading4;
 }
 
 .btn-primary {
@@ -186,4 +175,59 @@ aside {
 
 .selected {
   font-weight: bold;
+}
+
+// media queries
+@media (max-width: 768px) {
+  // heading styles
+  h1 {
+    @include desktopHeading2;
+  }
+
+  h2 {
+    @include desktopHeading3;
+  }
+
+  h3 {
+    @include desktopHeading4;
+  }
+
+  h4 {
+    @include desktopHeading5;
+  }
+}
+
+@media (max-width: 450px) {
+  .social-icons-container {
+    margin: 0 auto;
+  }
+  .arrow {
+    height: 64px;
+  }
+  .scroll-to-about {
+    bottom: 20px;
+    left: 40%;
+  }
+  .top {
+    padding: 10px 0;
+    bottom: -50px;
+    left: 75%;
+    background: $secondary-accent-text;
+    color: $white;
+    border: 3px solid transparent;
+    img {
+      transform: rotate(180deg);
+    }
+    &:hover {
+      background: #b55700;
+      border: 3px solid #b55700;
+    }
+    &:focus {
+      background: #b55700;
+      border: 3px solid #ffab5c;
+    }
+    img {
+      height: 24px;
+    }
+  }
 }

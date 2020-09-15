@@ -32,17 +32,14 @@ export default function Home() {
     <Layout home>
       <Head>
         <title>Irene Truong | Web Developer</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="images/favicon.ico" />
       </Head>
       <section className={homeStyles.heroBackground}>
         <div className="wrapper">
           <h1>
-            Irene Truong is a web developer experienced in{" "}
-            <span>
-              building web pages and web applications in both start-up and
-              corporate settings
-            </span>
-            .
+            Irene Truong is a web developer specializing in{" "}
+            <span>Front-End Development</span>. She brings{" "}
+            <span>experience</span> in both start-up and corporate settings.
           </h1>
           <Link href="/projects">
             <a className="btn-primary">View Projects</a>
@@ -56,12 +53,12 @@ export default function Home() {
           className="scroll-to-about"
           aria-label="Click to scroll to Irene's about section."
         >
-          <img src="/images/scroll-down-arrow.svg" alt="" className="arrow" />
+          <img src="/images/white-arrow.svg" alt="" className="arrow" />
         </a>
       </section>
       <section className={homeStyles.about} id="about">
         <div className={homeStyles.portraitContainer}>
-          <img src="/images/portrait.jpg" alt="Irene's headshot." />
+          <img src="/images/PortraitSquare.jpg" alt="Irene's headshot." />
         </div>
         <div className={homeStyles.copy}>
           <h2>About me</h2>
@@ -120,7 +117,7 @@ export default function Home() {
                 <p>JavaScript</p>
               </li>
               <li>
-                jQuery pic
+                <img src="tech-icons/jquery.svg" alt="" />
                 <p>jQuery</p>
               </li>
               <li>
@@ -143,7 +140,10 @@ export default function Home() {
               </li>
               <li>
                 <FontAwesomeIcon aria-hidden="true" icon={faAccessibleIcon} />
-                <p>Web accessibility</p>
+                <p>
+                  <abbr title="Web Content Accessibility Guidelines">WCAG</abbr>{" "}
+                  2.0
+                </p>
               </li>
             </ul>
           </div>
@@ -151,7 +151,7 @@ export default function Home() {
             <h2>Levelling up on</h2>
             <ul>
               <li>
-                REDUX PIC
+                <img src="tech-icons/redux.svg" alt="" />
                 <p>Redux</p>
               </li>
               <li>
@@ -188,7 +188,7 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            View Live
+            View live
           </a>
         </div>
       </section>
