@@ -11,7 +11,7 @@ export default function ConditionalCTA() {
     <>
       {router.pathname == "/" ? (
         <aside>
-          <h3>Want to see more?</h3>
+          <h2>Want to see more?</h2>
           <Link href="/projects">
             <a className="btn-primary">View all projects</a>
           </Link>
@@ -19,7 +19,7 @@ export default function ConditionalCTA() {
         </aside>
       ) : router.pathname == "/projects" ? (
         <aside className="grey-background">
-          <h3>Want to get in touch?</h3>
+          <h2>Want to get in touch?</h2>
           <Link href="/contact">
             <a className="btn-primary">Contact me</a>
           </Link>
@@ -27,7 +27,7 @@ export default function ConditionalCTA() {
         </aside>
       ) : router.pathname == "/contact" ? (
         <aside>
-          <h3>Thanks for visiting! Want to view the site again? 😉</h3>
+          <h2>Thanks for visiting! Want to view the site again? 😉</h2>
           <Link href="/">
             <a className="btn-primary">Go to Home Page</a>
           </Link>

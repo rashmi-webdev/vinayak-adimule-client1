@@ -115,6 +115,9 @@
 }
 
 @media (max-width: 450px) {
+  .projects-container {
+    background-position: 0 75px;
+  }
   .skills-list {
     margin-bottom: 48px;
     button {

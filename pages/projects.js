@@ -76,7 +76,7 @@ class Projects extends React.Component {
 
         <section className="projects-container">
           <h1>Projects</h1>
-          <ul className="skills-list">
+          <div className="skills-list">
             {skillsList.map((skill) => (
               <button
                 onClick={this.filterSkill}
@@ -87,7 +87,7 @@ class Projects extends React.Component {
                 {skill.name}
               </button>
             ))}
-          </ul>
+          </div>
 
           {currentFilter == "ALL" ? (
             <div className="project-card-list">
