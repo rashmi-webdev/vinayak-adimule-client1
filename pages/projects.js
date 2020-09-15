@@ -161,8 +161,14 @@ class Projects extends React.Component {
               strokeWidth="2"
             ></motion.rect>
           </motion.svg>
-          <h1>Projects</h1>
-          <ul className="skills-list">
+          <motion.h1 initial={{ y: 20 }} animate={{ y: 0 }}>
+            Projects
+          </motion.h1>
+          <motion.ul
+            initial={{ y: 20 }}
+            animate={{ y: 0 }}
+            className="skills-list"
+          >
             {skillsList.map((skill) => (
               <button
                 onClick={this.filterSkill}
@@ -173,7 +179,7 @@ class Projects extends React.Component {
                 {skill.name}
               </button>
             ))}
-          </ul>
+          </motion.ul>
 
           {currentFilter == "ALL" ? (
             <div className="project-card-list">
