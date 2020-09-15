@@ -2,8 +2,18 @@ import Head from "next/head";
 import Link from "next/link";
 
 import { useState, useCallback, useEffect } from "react";
-import loadable from "@loadable/component";
 
+// importing components
+const SocialIcons = loadable(() =>
+  import("../components/social-icons/social-icons-component")
+);
+
+// importing module styles
+import homeStyles from "../styles/Home.module.scss";
+
+import { motion } from "framer-motion";
+import loadable from "@loadable/component";
+import LazyLoad from "react-lazyload";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faHtml5,
@@ -21,16 +31,6 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 
 import { faExpand } from "@fortawesome/free-solid-svg-icons";
-
-// importing components
-const SocialIcons = loadable(() =>
-  import("../components/social-icons/social-icons-component")
-);
-
-// importing module styles
-import homeStyles from "../styles/Home.module.scss";
-
-import LazyLoad from "react-lazyload";
 
 export default function Home() {
   const useMediaQuery = (width) => {
@@ -74,19 +74,25 @@ export default function Home() {
               <img src="images/hero.jpg" alt="" />
             </LazyLoad>
           </div>
-          <div className="introduction">
+          <motion.div
+            className="introduction"
+            initial={{ y: 20 }}
+            animate={{ y: 0 }}
+          >
             <h1>
               Irene Truong is a web developer specializing in{" "}
               <span>Front-End Development</span>. She brings{" "}
               <span>experience</span> in both start-up and corporate settings.
             </h1>
-            <Link href="/projects">
-              <a className="btn-primary">View projects</a>
-            </Link>
+            <div>
+              <Link href="/projects">
+                <a className="btn-primary">View projects</a>
+              </Link>
+            </div>
             <div className={homeStyles.socialContainer}>
               <SocialIcons />
             </div>
-          </div>
+          </motion.div>
           <a
             href="#about"
             className="scroll-to-about"

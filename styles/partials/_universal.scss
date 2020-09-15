@@ -270,6 +270,13 @@ aside {
       height: 24px;
     }
   }
+  .error-section {
+    svg {
+      max-width: 100%;
+      top: -275px;
+      left: -160px;
+    }
+  }
 }
 
 @media (max-width: 360px) {
