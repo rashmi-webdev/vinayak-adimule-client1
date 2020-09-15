@@ -8,8 +8,6 @@ const ProjectCard = loadable(() =>
   import("../components/project-card/project-card.component")
 );
 
-// import ProjectCard from "../components/project-card/project-card.component";
-
 class Projects extends React.Component {
   constructor() {
     super();
@@ -57,10 +55,6 @@ class Projects extends React.Component {
           id: 10,
           name: "Mobile First",
         },
-        // {
-        //   id: 11,
-        //   name: "RESTful API",
-        // },
       ],
     };
   }

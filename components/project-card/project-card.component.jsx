@@ -17,7 +17,6 @@ export default function ProjectCard(props) {
         <div className="copy">
           <h3>{props.project.title}</h3>
           <div className="project-description">
-            {/* <p>{props.project.description}</p> */}
             <p
               dangerouslySetInnerHTML={{
                 __html: props.project.description,

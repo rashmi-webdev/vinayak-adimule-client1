@@ -1,38 +1,11 @@
 import Link from "next/link";
 
-import { useState, useCallback, useEffect } from "react";
 import { useRouter } from "next/router";
+
+import ScrollTopArrow from "./scroll-top-arrow-component";
 
 export default function ConditionalCTA() {
   const router = useRouter();
-
-  const useMediaQuery = (width) => {
-    const [targetReached, setTargetReached] = useState(false);
-
-    const updateTarget = useCallback((e) => {
-      if (e.matches) {
-        setTargetReached(true);
-      } else {
-        setTargetReached(false);
-      }
-    }, []);
-
-    useEffect(() => {
-      const media = window.matchMedia(`(max-width: ${width}px)`);
-      media.addListener(updateTarget);
-
-      // Check on mount (callback is not called until a change occurs)
-      if (media.matches) {
-        setTargetReached(true);
-      }
-
-      return () => media.removeListener(updateTarget);
-    }, []);
-
-    return targetReached;
-  };
-
-  const isMobile = useMediaQuery(450);
 
   return (
     <>
@@ -42,15 +15,7 @@ export default function ConditionalCTA() {
           <Link href="/projects">
             <a className="btn-primary">View all projects</a>
           </Link>
-
-          <a href="#top" className="top" aria-label="Click to scroll to top">
-            {isMobile ? (
-              <img src="/images/white-arrow.svg" alt="" className="arrow" />
-            ) : (
-              <img src="/images/navy-arrow.svg" alt="" className="arrow" />
-            )}
-            <p>Back to top</p>
-          </a>
+          <ScrollTopArrow />
         </aside>
       ) : router.pathname == "/projects" ? (
         <aside className="grey-background">
@@ -58,15 +23,7 @@ export default function ConditionalCTA() {
           <Link href="/contact">
             <a className="btn-primary">Contact me</a>
           </Link>
-
-          <a href="#top" className="top" aria-label="Click to scroll to top">
-            {isMobile ? (
-              <img src="/images/white-arrow.svg" alt="" className="arrow" />
-            ) : (
-              <img src="/images/navy-arrow.svg" alt="" className="arrow" />
-            )}
-            <p>Back to top</p>
-          </a>
+          <ScrollTopArrow />
         </aside>
       ) : router.pathname == "/contact" ? (
         <aside>
@@ -74,15 +31,7 @@ export default function ConditionalCTA() {
           <Link href="/">
             <a className="btn-primary">Go to Home Page</a>
           </Link>
-
-          <a href="#top" className="top" aria-label="Click to scroll to top">
-            {isMobile ? (
-              <img src="/images/white-arrow.svg" alt="" className="arrow" />
-            ) : (
-              <img src="/images/navy-arrow.svg" alt="" className="arrow" />
-            )}
-            <p>Back to top</p>
-          </a>
+          <ScrollTopArrow />
         </aside>
       ) : null}
     </>

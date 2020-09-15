@@ -36,9 +36,9 @@ export default function Layout({ children }) {
         <NavBar />
       </header>
 
-      {/* <Transition location={router.pathname}> */}
-      <main>{children}</main>
-      {/* </Transition> */}
+      <Transition location={router.pathname}>
+        <main>{children}</main>
+      </Transition>
       <ConditionalCTA />
       <PersistFooter />
     </>
