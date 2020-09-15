@@ -1,6 +1,8 @@
 import Head from "next/head";
 import Layout from "../components/layout/layout-component";
 
+import LazyLoad from "react-lazyload";
+
 export default function Contact() {
   return (
     // <Layout contact>
@@ -8,8 +10,9 @@ export default function Contact() {
       <Head>
         <title>Irene Truong | Contact</title>
       </Head>
-
-      <div className="contact-hero"></div>
+      <LazyLoad height={300}>
+        <div className="contact-hero"></div>
+      </LazyLoad>
       <section className="grey-background contact-card-container">
         <div className="white-contact-card ">
           <h1>Contact</h1>

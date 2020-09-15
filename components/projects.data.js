@@ -157,6 +157,15 @@ const PROJECTS_DATA = [
     githubUrl:
       "https://github.com/the-best-doduo/harry-grewal-irene-truong-project-4",
   },
+  {
+    id: 14,
+    title: "Multi-Page PSD Conversion - Captured",
+    imagePath: "/images/project-previews/Captured.jpg",
+    description: "PSD to HTML/CSS Conversion. Design provided by HackerYou.",
+    skills: ["HTML5", "CSS3", "SASS/SCSS", "Responsive Web Design"],
+    liveUrl: "https://irenecodes.github.io/Captured/",
+    githubUrl: "https://github.com/irenecodes/Captured",
+  },
 ];
 
 export default PROJECTS_DATA;

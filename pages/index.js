@@ -27,6 +27,8 @@ import SocialIcons from "../components/social-icons/social-icons-component";
 // importing module styles
 import homeStyles from "../styles/Home.module.scss";
 
+import LazyLoad from "react-lazyload";
+
 export default function Home() {
   const useMediaQuery = (width) => {
     const [targetReached, setTargetReached] = useState(false);
@@ -63,8 +65,35 @@ export default function Home() {
         <link rel="icon" href="images/favicon.ico" />
       </Head>
 
-      <section className={homeStyles.heroBackground}>
+      {/* <section className={homeStyles.heroBackground}>
         <div className="wrapper">
+          <h1>
+            Irene Truong is a web developer specializing in{" "}
+            <span>Front-End Development</span>. She brings{" "}
+            <span>experience</span> in both start-up and corporate settings.
+          </h1>
+          <Link href="/projects">
+            <a className="btn-primary">View Projects</a>
+          </Link>
+          <div className={homeStyles.socialContainer}>
+            <SocialIcons />
+          </div>
+        </div>
+        <a
+          href="#about"
+          className="scroll-to-about"
+          aria-label="Click to scroll to Irene's about section."
+        >
+          <img src="/images/white-arrow.svg" alt="" className="arrow" />
+        </a>
+      </section> */}
+      <section className="home-hero">
+        <div class="hero-image-container">
+          <LazyLoad height={900}>
+            <img src="images/hero.jpg" alt="" />
+          </LazyLoad>
+        </div>
+        <div className="introduction">
           <h1>
             Irene Truong is a web developer specializing in{" "}
             <span>Front-End Development</span>. She brings{" "}
@@ -88,7 +117,9 @@ export default function Home() {
 
       <section className={homeStyles.about} id="about">
         <div className={homeStyles.portraitContainer}>
-          <img src="/images/PortraitSquare.jpg" alt="Irene's headshot." />
+          <LazyLoad height={400}>
+            <img src="/images/PortraitSquare.jpg" alt="Irene's headshot." />
+          </LazyLoad>
         </div>
         <div className={homeStyles.copy}>
           <h2>About me</h2>
@@ -147,8 +178,10 @@ export default function Home() {
                 <p>JavaScript</p>
               </li>
               <li>
-                <img src="tech-icons/jquery.svg" alt="" />
-                <p>jQuery</p>
+                <LazyLoad height={40}>
+                  <img src="tech-icons/jquery.svg" alt="" />
+                  <p>jQuery</p>
+                </LazyLoad>
               </li>
               <li>
                 <FontAwesomeIcon aria-hidden="true" icon={faReact} />
@@ -181,7 +214,9 @@ export default function Home() {
             <h2>Levelling up on</h2>
             <ul>
               <li>
-                <img src="tech-icons/redux.svg" alt="" />
+                <LazyLoad height={40}>
+                  <img src="tech-icons/redux.svg" alt="" />
+                </LazyLoad>
                 <p>Redux</p>
               </li>
               <li>
