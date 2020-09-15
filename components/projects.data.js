@@ -30,7 +30,7 @@ const PROJECTS_DATA = [
     title: "Irene Truong's Portfolio",
     imagePath: "/images/project-previews/ITPortfolioTwo.jpg",
     description:
-      "This site! I wanted to build from scratch what I've learned over the years. Designed by <a href='https://joeyhua.com' target='_blank' rel='noopener noreferrer'>Joey Hua, UX Designer</a>. Feel free to view the source code to see what my mind decided to refactor as I went along with the build.",
+      "This site! I wanted to build from scratch what I've learned over the years. Designed by <a href='https://joeyhua.com' target='_blank' rel='noopener noreferrer'>Joey Hua, UX Designer</a>. Feel free to view the source code to see how I decided to refactor as I went along with the build.",
     skills: ["React.js", "Next.js", "SASS/SCSS", "Responsive Web Design"],
     githubUrl: "https://github.com/irenecodes/irene-portfolio-next",
   },

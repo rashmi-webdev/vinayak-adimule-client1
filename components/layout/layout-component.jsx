@@ -1,5 +1,5 @@
 import Head from "next/head";
-import Transition from "../Transition";
+
 import { useRouter } from "next/router";
 
 // components
@@ -36,9 +36,8 @@ export default function Layout({ children }) {
         <NavBar />
       </header>
 
-      <Transition location={router.pathname}>
-        <main>{children}</main>
-      </Transition>
+      <main>{children}</main>
+
       <ConditionalCTA />
       <PersistFooter />
     </>
