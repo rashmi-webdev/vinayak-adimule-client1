@@ -27,7 +27,7 @@ export default function ConditionalCTA() {
         </aside>
       ) : router.pathname == "/contact" ? (
         <aside>
-          <h3>Thanks for visiting! Want to check it out again? 😉</h3>
+          <h3>Thanks for visiting! Want to view the site again? 😉</h3>
           <Link href="/">
             <a className="btn-primary">Go to Home Page</a>
           </Link>
