@@ -27,7 +27,7 @@ export default function ScrollTopArrow() {
     return targetReached;
   };
 
-  const isMobile = useMediaQuery(450);
+  const isMobile = useMediaQuery(480);
 
   return (
     <a href="#top" className="top" aria-label="Click to scroll to top">

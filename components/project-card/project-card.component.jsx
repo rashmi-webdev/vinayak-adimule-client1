@@ -45,7 +45,7 @@ export default function ProjectCard(props) {
                 rel="noopener noreferrer"
                 href={props.project.githubUrl}
               >
-                Source Code
+                Source code
               </a>
             </div>
           </div>

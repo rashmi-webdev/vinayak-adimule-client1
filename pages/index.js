@@ -81,7 +81,7 @@ export default function Home() {
               <span>experience</span> in both start-up and corporate settings.
             </h1>
             <Link href="/projects">
-              <a className="btn-primary">View Projects</a>
+              <a className="btn-primary">View projects</a>
             </Link>
             <div className={homeStyles.socialContainer}>
               <SocialIcons />
@@ -95,28 +95,6 @@ export default function Home() {
             <img src="/images/white-arrow.svg" alt="" className="arrow" />
           </a>
         </section>
-        {/* <section className={homeStyles.heroBackground}>
-          <div className="wrapper">
-            <h1>
-              Irene Truong is a web developer specializing in{" "}
-              <span>Front-End Development</span>. She brings{" "}
-              <span>experience</span> in both start-up and corporate settings.
-            </h1>
-            <Link href="/projects">
-              <a className="btn-primary">View Projects</a>
-            </Link>
-            <div className={homeStyles.socialContainer}>
-              <SocialIcons />
-            </div>
-          </div>
-          <a
-            href="#about"
-            className="scroll-to-about"
-            aria-label="Click to scroll to Irene's about section."
-          >
-            <img src="/images/white-arrow.svg" alt="" className="arrow" />
-          </a>
-        </section> */}
       </LazyLoad>
 
       <section className={homeStyles.about} id="about">

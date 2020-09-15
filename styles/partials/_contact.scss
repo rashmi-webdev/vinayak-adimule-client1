@@ -43,6 +43,7 @@
   textarea {
     margin-bottom: 30px;
     padding: 5px;
+    border: 2px solid $dark-main;
   }
   .form-submit {
     display: block;
@@ -70,7 +71,7 @@ fieldset {
   }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 480px) {
   .white-contact-card {
     padding: 20px;
     input,
