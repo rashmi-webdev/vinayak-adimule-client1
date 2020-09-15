@@ -16,8 +16,18 @@ const PROJECTS_DATA = [
     ],
     liveUrl: "https://mallatlawsonheights.com/",
   },
+
+  {
+    id: 2,
+    title: "Irene Truong's Portfolio",
+    imagePath: "/images/project-previews/ITPortfolioTwo.jpg",
+    description:
+      "This site! I wanted to build from scratch what I've learned over the years. Designed by <a href='https://joeyhua.com' target='_blank' rel='noopener noreferrer'>Joey Hua, UX Designer</a>. Feel free to view the source code to see how I decided to refactor as I went along with the build.",
+    skills: ["React.js", "Next.js", "SASS/SCSS", "Responsive Web Design"],
+    githubUrl: "https://github.com/irenecodes/irene-portfolio-next",
+  },
   // {
-  //   id: 2,
+  //   id: 3,
   //   title: "Insight Vacations - Uplift Landing Page",
   //   imagePath: "/images/project-previews/Uplift.jpg",
   //   description:
@@ -26,16 +36,7 @@ const PROJECTS_DATA = [
   //   liveUrl: "https://www.insightvacations.com/us/uplift",
   // },
   {
-    id: 13,
-    title: "Irene Truong's Portfolio",
-    imagePath: "/images/project-previews/ITPortfolioTwo.jpg",
-    description:
-      "This site! I wanted to build from scratch what I've learned over the years. Designed by <a href='https://joeyhua.com' target='_blank' rel='noopener noreferrer'>Joey Hua, UX Designer</a>. Feel free to view the source code to see how I decided to refactor as I went along with the build.",
-    skills: ["React.js", "Next.js", "SASS/SCSS", "Responsive Web Design"],
-    githubUrl: "https://github.com/irenecodes/irene-portfolio-next",
-  },
-  {
-    id: 3,
+    id: 4,
     title: "Personal Date Night",
     imagePath: "/images/project-previews/PersonalDateNight.jpg",
     description:
@@ -52,7 +53,7 @@ const PROJECTS_DATA = [
     githubUrl: "https://github.com/caij-consulting/personal-date-night",
   },
   {
-    id: 4,
+    id: 5,
     title: "Client Portfolio Site",
     imagePath: "/images/project-previews/ClientJoey.jpg",
     description: "Client site coded and deployed. Design provided by client. ",
@@ -61,7 +62,7 @@ const PROJECTS_DATA = [
     githubUrl: "https://github.com/irenecodes/jh-portfolio",
   },
   {
-    id: 5,
+    id: 6,
     title: "Single Page PSD Conversion - Arora Jewlers",
     imagePath: "/images/project-previews/AroraJewlers.jpg",
     description:
@@ -71,7 +72,7 @@ const PROJECTS_DATA = [
     githubUrl: "https://irenecodes.github.io/Arora-Jewlers/",
   },
   {
-    id: 6,
+    id: 7,
     title: "Single Page PSD Conversion - HackerYou Landing Page",
     imagePath: "/images/project-previews/HackerYouLP.jpg",
     description: "PSD to HTML/CSS Conversion. Design provided by HackerYou.",
@@ -80,7 +81,7 @@ const PROJECTS_DATA = [
     githubUrl: "https://github.com/irenecodes/psd-conversion-challenge",
   },
   {
-    id: 7,
+    id: 8,
     title: "Bookstore",
     imagePath: "/images/project-previews/Bookstore.jpg",
     description:
@@ -90,7 +91,7 @@ const PROJECTS_DATA = [
     githubUrl: "https://github.com/irenecodes/bookstore",
   },
   {
-    id: 8,
+    id: 9,
     title: "Pet Lims",
     imagePath: "/images/project-previews/PetLims.jpg",
     description:
@@ -100,7 +101,7 @@ const PROJECTS_DATA = [
     githubUrl: "https://github.com/irenecodes/Pet-Lims",
   },
   {
-    id: 9,
+    id: 10,
     title: "Keyboard Warrior",
     imagePath: "/images/project-previews/KeyboardWarrior.jpg",
     description:
@@ -110,7 +111,7 @@ const PROJECTS_DATA = [
     githubUrl: "https://github.com/irenecodes/keyboard-warrior",
   },
   {
-    id: 10,
+    id: 11,
     title: "Quote Generator",
     imagePath: "/images/project-previews/QuoteGenerator.jpg",
     description:
@@ -120,7 +121,7 @@ const PROJECTS_DATA = [
     githubUrl: "https://github.com/irenecodes/quote-generator",
   },
   {
-    id: 11,
+    id: 12,
     title: "Sleep Talk",
     imagePath: "/images/project-previews/SleepTalk.jpg",
     description:
@@ -133,11 +134,11 @@ const PROJECTS_DATA = [
       "Firebase",
       "Responsive Web Design",
     ],
-    liveUrl: "https://irenecodes.github.io/quote-generator/",
-    githubUrl: "https://github.com/irenecodes/quote-generator",
+    liveUrl: "dream-log.firebaseapp.com/",
+    githubUrl: "https://github.com/irenecodes/dream-log",
   },
   {
-    id: 12,
+    id: 13,
     title: "Who's That Pokémon?",
     imagePath: "/images/project-previews/WhosThatPokemon.jpg",
     description:
