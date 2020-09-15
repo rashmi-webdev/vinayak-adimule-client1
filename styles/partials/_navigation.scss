@@ -26,11 +26,11 @@ header {
       padding-bottom: 10px;
       cursor: pointer;
       position: relative;
-      color: $main-text;
+      color: $dark-main;
     }
   }
   .selected {
-    border-bottom: 2px solid $text;
+    border-bottom: 2px solid $white;
   }
 }
 

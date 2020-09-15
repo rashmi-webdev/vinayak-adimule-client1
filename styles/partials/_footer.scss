@@ -1,5 +1,5 @@
 footer {
-  background: $dark-bg;
+  background: $dark-main;
   p {
     margin-top: 45px;
     color: $secondary-dark-bg;
@@ -9,7 +9,7 @@ footer {
     margin: 0 auto;
     max-width: 296px;
     a {
-      color: $text;
+      color: $white;
       transition: 0.3s ease all;
       &:hover,
       &:focus {

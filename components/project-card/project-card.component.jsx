@@ -1,7 +1,15 @@
+import { motion } from "framer-motion";
+
 export default function ProjectCard(props) {
   return (
     <>
-      <div className="card" key={props.project.id}>
+      <motion.div
+        initial={{ x: 100, opacity: 0 }}
+        animate={{ x: 0, opacity: 1 }}
+        exit={{ opacity: 0 }}
+        className="card"
+        key={props.project.id}
+      >
         <img
           src={props.project.imagePath}
           alt={`Preview image of ${props.project.title}.`}
@@ -64,7 +72,7 @@ export default function ProjectCard(props) {
             </div>
           </div>
         )}
-      </div>
+      </motion.div>
     </>
   );
 }

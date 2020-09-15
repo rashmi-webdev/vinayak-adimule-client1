@@ -1,12 +1,8 @@
 .projects-container {
   background: #fff url("/images/projects-bg.jpg") no-repeat;
-  //   height: 100vh;
-  //   background: rgba(0, 0, 0, 0.5) url("/images/hero.jpg") no-repeat;
   background-size: contain;
-  //   background-position: center;
   background-position: 0 100px;
   background-attachment: fixed;
-  //   position: relative;
   h1 {
     text-align: center;
     padding: 174px 0 64px;
@@ -41,8 +37,8 @@
   justify-content: space-between;
   .card {
     flex: 0 0 45%;
-    border: 1px solid $main-text;
-    background: #fff;
+    border: 1px solid $dark-main;
+    background: $white;
     margin-bottom: 60px;
     position: relative;
   }

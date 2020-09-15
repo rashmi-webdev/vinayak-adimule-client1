@@ -8,13 +8,11 @@
 body {
   font-size: 16px;
   font-family: "Poppins", sans-serif;
-  color: $main-text;
+  color: $dark-main;
 }
 
 html {
-  // font-size: 125%;
-  // font-family: $robo;
-  // color: $text-col;
+  scroll-behavior: smooth;
 }
 
 a {
@@ -60,7 +58,7 @@ h1 {
   font-size: 2.75rem;
   line-height: 66px;
   span {
-    color: $text;
+    color: $white;
   }
 }
 
@@ -116,7 +114,7 @@ h4 {
 .social-icons-container {
   max-width: 225px;
   a {
-    color: $main-text;
+    color: $dark-main;
     transition: 0.3s ease all;
     &:hover,
     &:focus {
@@ -138,7 +136,6 @@ h4 {
 
 //see more projects/scroll to top arrow
 aside {
-  // @include wrapper;
   position: relative;
   text-align: center;
   h3 {
@@ -163,7 +160,7 @@ aside {
   bottom: 34px;
   left: 90%;
   z-index: 50;
-  color: $main-text;
+  color: $dark-main;
   padding: 10px;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;

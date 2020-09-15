@@ -1,8 +1,8 @@
 import Head from "next/head";
-// import Link from "next/link";
-
-import { motion } from "framer-motion";
 import { useRouter } from "next/router";
+
+// transitions
+import { motion } from "framer-motion";
 
 // components
 import NavBar from "../navigation/nav-bar-component";
@@ -10,44 +10,45 @@ import PersistFooter from "../footer/footer-component";
 import ConditionalCTA from "../see-more/see-more-projects.component";
 
 const name = "Irene Truong";
+const description =
+  "Irene Truong is a Web Developer specializing in Front-End servicing the Toronto and Greater Toronto Area.";
 export const siteTitle = "Irene Truong | Web Developer";
 
 export default function Layout({ children, home, contact }) {
   const router = useRouter();
   return (
-    // <div className={styles.container}>
     <>
       <Head>
-        <link rel="icon" href="/favicon.ico" />
         <meta
-          name="description"
-          content="Irene Truong is a Web Developer specializing in Front-End servicing the Toronto and Greater Toronto Area."
-        />
-        {/* <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1.0"
+        ></meta>
+        <meta name="description" content={description} />
+        <meta
           name="keywords"
-          content="Front-End, Front End Developer, Web Developer, Irene Truong, Developer"
+          content="Front-End, Front End Developer, Web Developer, Irene Truong, Developer, GTA Web Developer, Toronto Web Developer"
         />
-        <meta name="author" content="Irene Truong" /> */}
-
-        {/* <meta
-          property="og:image"
-          content={`https://og-image.now.sh/${encodeURI(
-            siteTitle
-          )}.png?theme=light&md=0&fontSize=75px&images=https%3A%2F%2Fassets.vercel.com%2Fimage%2Fupload%2Ffront%2Fassets%2Fdesign%2Fnextjs-black-logo.svg`}
-        /> */}
+        <meta name="author" content={name} />
         <meta name="og:title" content={siteTitle} />
-        {/* <meta name="twitter:card" content="summary_large_image" /> */}
+        <meta property="og:description" content={description} />
+        <meta property="og:image" content="/images/OG_Image.jpg" />
+        <meta property="og:url" content="https://irenetruong.com/"></meta>
+        <meta name="twitter:card" content="summary_large_image" />
+        <link rel="icon" href="/favicon.ico" />
       </Head>
-      <header>
+      <header id="top">
         <NavBar />
       </header>
 
-      <motion.div exit={{ opacity: 0 }}>
+      <motion.div
+        exit={{ opacity: 1 }}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+      >
         <main>{children}</main>
       </motion.div>
 
       {!contact && <ConditionalCTA />}
-      {/* </div> */}
       <PersistFooter />
     </>
   );

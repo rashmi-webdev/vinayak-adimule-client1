@@ -11,7 +11,7 @@
 
 .white-contact-card {
   padding: 18px 135px 55px;
-  background: $text;
+  background: $white;
   margin: 0 auto;
   width: 80%;
   max-width: 736px;
@@ -47,6 +47,10 @@
     display: block;
     margin: 0 auto;
   }
+}
+
+textarea {
+  resize: none;
 }
 
 fieldset {

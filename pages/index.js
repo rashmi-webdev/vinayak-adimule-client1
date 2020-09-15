@@ -1,7 +1,7 @@
 import Head from "next/head";
+import Link from "next/link";
 
 import Layout from "../components/layout/layout-component";
-// import { motion } from "framer-motion";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -19,37 +19,28 @@ import {
   faBootstrap,
 } from "@fortawesome/free-brands-svg-icons";
 
-import {
-  faExpand,
-  faArrowUp,
-  faArrowDown,
-} from "@fortawesome/free-solid-svg-icons";
-
-// using link
-import Link from "next/link";
+import { faExpand } from "@fortawesome/free-solid-svg-icons";
 
 // importing components
 import SocialIcons from "../components/social-icons/social-icons-component";
 
-// importing styles
+// importing module styles
 import homeStyles from "../styles/Home.module.scss";
 
 export default function Home() {
   return (
-    // <motion.div exit={{ opacity: 0 }}>
     <Layout home>
       <Head>
         <title>Irene Truong | Web Developer</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <section className={homeStyles.heroBackground}>
-        {/* <div className="hero-image"> */}
         <div className="wrapper">
           <h1>
             Irene Truong is a web developer experienced in{" "}
             <span>
-              building blocks of the internet in both start-up and corporate
-              settings
+              building web pages and web applications in both start-up and
+              corporate settings
             </span>
             .
           </h1>
@@ -67,7 +58,6 @@ export default function Home() {
         >
           <img src="/images/scroll-down-arrow.svg" alt="" className="arrow" />
         </a>
-        {/* </div> */}
       </section>
       <section className={homeStyles.about} id="about">
         <div className={homeStyles.portraitContainer}>
@@ -203,6 +193,5 @@ export default function Home() {
         </div>
       </section>
     </Layout>
-    // </motion.div>
   );
 }

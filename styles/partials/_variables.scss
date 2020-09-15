@@ -7,10 +7,7 @@ $accent-text: #0d8274;
 $secondary-accent-text: #e66f00;
 
 /* 5.5 Main Text */
-$main-text: #1c2c63;
-
-/* 5.6.1 Button Background */
-$button-background: #e66f00;
+$dark-main: #1c2c63;
 
 /* 5.6.2 Button Background */
 $button-background-teal: #0b9988;
@@ -22,10 +19,7 @@ $accent-text-dark-bg: #ffab5c;
 $secondary-dark-bg: #1fe7c3;
 
 /* 5.4 Text (Dark Background) */
-$text: #ffffff;
-
-/* 5.3 Dark Background */
-$dark-bg: #1c2c63;
+$white: #ffffff;
 
 /*** FONT STYLES ***/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
@@ -34,7 +28,7 @@ $dark-bg: #1c2c63;
 
 @mixin button($background, $padding) {
   font-size: 1.25rem;
-  color: $text;
+  color: $white;
   text-align: center;
   background: $background;
   padding: $padding;
