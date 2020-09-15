@@ -67,30 +67,31 @@ export default function Home() {
         <title>Irene Truong | Web Developer</title>
         <link rel="icon" href="images/favicon.ico" />
       </Head>
-
-      {/* <section className={homeStyles.heroBackground}>
-        <div className="wrapper">
-          <h1>
-            Irene Truong is a web developer specializing in{" "}
-            <span>Front-End Development</span>. She brings{" "}
-            <span>experience</span> in both start-up and corporate settings.
-          </h1>
-          <Link href="/projects">
-            <a className="btn-primary">View Projects</a>
-          </Link>
-          <div className={homeStyles.socialContainer}>
-            <SocialIcons />
+      <LazyLoad height={900}>
+        <section className={homeStyles.heroBackground}>
+          <div className="wrapper">
+            <h1>
+              Irene Truong is a web developer specializing in{" "}
+              <span>Front-End Development</span>. She brings{" "}
+              <span>experience</span> in both start-up and corporate settings.
+            </h1>
+            <Link href="/projects">
+              <a className="btn-primary">View Projects</a>
+            </Link>
+            <div className={homeStyles.socialContainer}>
+              <SocialIcons />
+            </div>
           </div>
-        </div>
-        <a
-          href="#about"
-          className="scroll-to-about"
-          aria-label="Click to scroll to Irene's about section."
-        >
-          <img src="/images/white-arrow.svg" alt="" className="arrow" />
-        </a>
-      </section> */}
-      <section className="home-hero">
+          <a
+            href="#about"
+            className="scroll-to-about"
+            aria-label="Click to scroll to Irene's about section."
+          >
+            <img src="/images/white-arrow.svg" alt="" className="arrow" />
+          </a>
+        </section>
+      </LazyLoad>
+      {/* <section className="home-hero">
         <div className="hero-image-container">
           <LazyLoad height={900}>
             <img src="images/hero.jpg" alt="" />
@@ -116,7 +117,7 @@ export default function Home() {
         >
           <img src="/images/white-arrow.svg" alt="" className="arrow" />
         </a>
-      </section>
+      </section> */}
 
       <section className={homeStyles.about} id="about">
         <div className={homeStyles.portraitContainer}>
