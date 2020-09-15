@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Link from "next/link";
 
-import Layout from "../components/layout/layout-component";
+import { useState, useCallback, useEffect } from "react";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -28,8 +28,35 @@ import SocialIcons from "../components/social-icons/social-icons-component";
 import homeStyles from "../styles/Home.module.scss";
 
 export default function Home() {
+  const useMediaQuery = (width) => {
+    const [targetReached, setTargetReached] = useState(false);
+
+    const updateTarget = useCallback((e) => {
+      if (e.matches) {
+        setTargetReached(true);
+      } else {
+        setTargetReached(false);
+      }
+    }, []);
+
+    useEffect(() => {
+      const media = window.matchMedia(`(max-width: ${width}px)`);
+      media.addListener(updateTarget);
+
+      // Check on mount (callback is not called until a change occurs)
+      if (media.matches) {
+        setTargetReached(true);
+      }
+
+      return () => media.removeListener(updateTarget);
+    }, []);
+
+    return targetReached;
+  };
+
+  const isTablet = useMediaQuery(768);
+
   return (
-    // <Layout home>
     <>
       <Head>
         <title>Irene Truong | Web Developer</title>
@@ -171,7 +198,18 @@ export default function Home() {
       </section>
       <section className="featured-project">
         <h2>Featured Project</h2>
-        <img src="/images/LHPreview.gif" alt="" />
+        {isTablet ? (
+          <video width="600" height="270" controls>
+            <source src="/images/LHVideoPreview.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        ) : (
+          <video width="1000" height="525" controls>
+            <source src="/images/LHVideoPreview.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        )}
+
         <h3>Lawson Heights</h3>
         <div className="featured-layout">
           <div className="project-description">
@@ -195,7 +233,6 @@ export default function Home() {
           </a>
         </div>
       </section>
-      {/* </Layout> */}
     </>
   );
 }

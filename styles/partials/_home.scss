@@ -64,8 +64,12 @@
     text-align: center;
     margin-bottom: 30px;
   }
-  img {
+  img,
+  video {
     margin-bottom: 30px;
+  }
+  video {
+    width: 100%;
   }
   h3 {
     color: $accent-text;
@@ -102,11 +106,18 @@
       padding: 33px 0;
       margin-right: 0;
     }
+    img {
+      width: 64px;
+      margin-bottom: 27px;
+    }
   }
   .future {
     ul {
       flex-direction: row;
       justify-content: space-evenly;
+    }
+    img {
+      margin-bottom: 22px;
     }
   }
   .featured-project {
@@ -119,6 +130,10 @@
     }
     a {
       margin-top: 12px;
+    }
+    video {
+      border: 2px solid $dark-main;
+      background: linear-gradient($dark-main, #fff);
     }
   }
 }
@@ -135,6 +150,23 @@
   .future {
     ul {
       flex-wrap: wrap;
+    }
+  }
+  .current {
+    img {
+      width: 28px;
+      margin-bottom: 21px;
+    }
+  }
+  .future {
+    img {
+      width: 29px;
+      margin-bottom: 18px;
+    }
+  }
+  .featured-project {
+    video {
+      max-height: 164px;
     }
   }
 }
