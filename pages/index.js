@@ -2,6 +2,7 @@ import Head from "next/head";
 import Link from "next/link";
 
 import { useState, useCallback, useEffect } from "react";
+import loadable from "@loadable/component";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -22,7 +23,9 @@ import {
 import { faExpand } from "@fortawesome/free-solid-svg-icons";
 
 // importing components
-import SocialIcons from "../components/social-icons/social-icons-component";
+const SocialIcons = loadable(() =>
+  import("../components/social-icons/social-icons-component")
+);
 
 // importing module styles
 import homeStyles from "../styles/Home.module.scss";
@@ -88,7 +91,7 @@ export default function Home() {
         </a>
       </section> */}
       <section className="home-hero">
-        <div class="hero-image-container">
+        <div className="hero-image-container">
           <LazyLoad height={900}>
             <img src="images/hero.jpg" alt="" />
           </LazyLoad>

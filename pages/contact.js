@@ -1,11 +1,9 @@
 import Head from "next/head";
-import Layout from "../components/layout/layout-component";
 
 import LazyLoad from "react-lazyload";
 
 export default function Contact() {
   return (
-    // <Layout contact>
     <>
       <Head>
         <title>Irene Truong | Contact</title>
@@ -16,24 +14,6 @@ export default function Contact() {
       <section className="grey-background contact-card-container">
         <div className="white-contact-card ">
           <h1>Contact</h1>
-          {/* <p>Feel free to contact me if:</p>
-          <ol>
-            <li>You'd like to work together.</li>
-            <li>You'd like to hire me.</li>
-            <li>You'd like to discuss a freelance project.</li>
-            <li>
-              You'd like to talk about Pokémon GO and schedule 5-Star raids with
-              me.
-            </li>
-            <li>
-              You'd like to discuss your favourite personality from Netflix's
-              Selling Sunset.
-            </li>
-            <li>
-              I'd like to think I'm friendly, so in general, feel free to get in
-              touch!
-            </li>
-          </ol> */}
 
           <form
             action="https://formspree.io/itruong25.it@gmail.com"
@@ -75,7 +55,6 @@ export default function Contact() {
           </form>
         </div>
       </section>
-      {/* </Layout> */}
     </>
   );
 }

@@ -1,10 +1,14 @@
 import Head from "next/head";
-import Layout from "../components/layout/layout-component";
 
 // import data
 import PROJECTS_DATA from "../components/projects.data";
 
-import ProjectCard from "../components/project-card/project-card.component";
+import loadable from "@loadable/component";
+const ProjectCard = loadable(() =>
+  import("../components/project-card/project-card.component")
+);
+
+// import ProjectCard from "../components/project-card/project-card.component";
 
 class Projects extends React.Component {
   constructor() {
@@ -72,7 +76,6 @@ class Projects extends React.Component {
     const allProjects = projectsData;
     return (
       <>
-        {/* <Layout> */}
         <Head>
           <title>Irene Truong | Projects</title>
         </Head>
@@ -106,7 +109,6 @@ class Projects extends React.Component {
             </div>
           )}
         </section>
-        {/* </Layout> */}
       </>
     );
   }
