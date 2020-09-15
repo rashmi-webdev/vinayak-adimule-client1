@@ -1,9 +1,6 @@
 import Head from "next/head";
 import { useRouter } from "next/router";
 
-// transitions
-import { motion } from "framer-motion";
-
 // components
 import NavBar from "../navigation/nav-bar-component";
 import PersistFooter from "../footer/footer-component";
@@ -37,13 +34,7 @@ export default function Layout({ children, home, contact }) {
         <NavBar />
       </header>
 
-      <motion.div
-        exit={{ opacity: 1 }}
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-      >
-        <main>{children}</main>
-      </motion.div>
+      <main>{children}</main>
 
       {!contact && <ConditionalCTA />}
       <PersistFooter />

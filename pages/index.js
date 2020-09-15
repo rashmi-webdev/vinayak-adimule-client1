@@ -27,8 +27,6 @@ import SocialIcons from "../components/social-icons/social-icons-component";
 // importing module styles
 import homeStyles from "../styles/Home.module.scss";
 
-import { motion } from "framer-motion";
-
 export default function Home() {
   return (
     <Layout home>
@@ -36,34 +34,30 @@ export default function Home() {
         <title>Irene Truong | Web Developer</title>
         <link rel="icon" href="images/favicon.ico" />
       </Head>
-      <motion.div
-        exit={{ opacity: 1 }}
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-      >
-        <section className={homeStyles.heroBackground}>
-          <div className="wrapper">
-            <h1>
-              Irene Truong is a web developer specializing in{" "}
-              <span>Front-End Development</span>. She brings{" "}
-              <span>experience</span> in both start-up and corporate settings.
-            </h1>
-            <Link href="/projects">
-              <a className="btn-primary">View Projects</a>
-            </Link>
-            <div className={homeStyles.socialContainer}>
-              <SocialIcons />
-            </div>
+
+      <section className={homeStyles.heroBackground}>
+        <div className="wrapper">
+          <h1>
+            Irene Truong is a web developer specializing in{" "}
+            <span>Front-End Development</span>. She brings{" "}
+            <span>experience</span> in both start-up and corporate settings.
+          </h1>
+          <Link href="/projects">
+            <a className="btn-primary">View Projects</a>
+          </Link>
+          <div className={homeStyles.socialContainer}>
+            <SocialIcons />
           </div>
-          <a
-            href="#about"
-            className="scroll-to-about"
-            aria-label="Click to scroll to Irene's about section."
-          >
-            <img src="/images/white-arrow.svg" alt="" className="arrow" />
-          </a>
-        </section>
-      </motion.div>
+        </div>
+        <a
+          href="#about"
+          className="scroll-to-about"
+          aria-label="Click to scroll to Irene's about section."
+        >
+          <img src="/images/white-arrow.svg" alt="" className="arrow" />
+        </a>
+      </section>
+
       <section className={homeStyles.about} id="about">
         <div className={homeStyles.portraitContainer}>
           <img src="/images/PortraitSquare.jpg" alt="Irene's headshot." />
