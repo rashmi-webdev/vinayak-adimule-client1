@@ -219,6 +219,21 @@ aside {
 }
 
 @media (max-width: 450px) {
+  h1 {
+    @include desktopHeading3;
+  }
+
+  h2 {
+    @include desktopHeading4;
+  }
+
+  h3 {
+    @include desktopHeading5;
+  }
+
+  h4 {
+    @include desktopHeading5;
+  }
   .social-icons-container {
     margin: 0 auto;
   }
@@ -226,7 +241,7 @@ aside {
     height: 64px;
   }
   .scroll-to-about {
-    bottom: 20px;
+    bottom: 10px;
     left: 40%;
   }
   .top {

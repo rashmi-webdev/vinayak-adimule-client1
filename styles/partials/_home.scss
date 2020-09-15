@@ -175,17 +175,23 @@
 
 @media (max-width: 450px) {
   .home-hero {
+    height: 700px;
     .introduction {
       top: 180px;
 
       max-width: 90%;
+      h1 {
+        margin-bottom: 40px;
+      }
     }
     .hero-image-container {
       img {
         object-position: center;
+        max-height: 700px;
       }
     }
   }
+
   .current,
   .future {
     li {
