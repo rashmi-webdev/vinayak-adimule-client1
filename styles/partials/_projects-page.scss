@@ -137,6 +137,12 @@
       margin-bottom: 16px;
     }
   }
+  .projects-container {
+    svg {
+      top: -460px;
+      left: -160px;
+    }
+  }
 }
 
 @media (max-width: 480px) {
@@ -150,7 +156,7 @@
   .projects-container {
     svg {
       max-width: 100%;
-      top: -275px;
+      top: -400px;
       right: 160px;
     }
   }

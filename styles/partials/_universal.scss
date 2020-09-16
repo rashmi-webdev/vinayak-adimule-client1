@@ -220,6 +220,12 @@ aside {
   h4 {
     @include desktopHeading5;
   }
+  .error-section {
+    svg {
+      left: -160px;
+      top: -460px;
+    }
+  }
 }
 
 @media (max-width: 480px) {
@@ -273,8 +279,8 @@ aside {
   .error-section {
     svg {
       max-width: 100%;
-      top: -275px;
-      left: -160px;
+      top: -400px;
+      right: 160px;
     }
   }
 }
