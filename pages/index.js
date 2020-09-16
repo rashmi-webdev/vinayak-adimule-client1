@@ -65,7 +65,6 @@ export default function Home() {
     <>
       <Head>
         <title>Irene Truong | Web Developer</title>
-        <link rel="icon" href="images/favicon.ico" />
       </Head>
       <LazyLoad height={900}>
         <section className="home-hero">

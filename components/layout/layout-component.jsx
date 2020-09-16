@@ -29,7 +29,7 @@ export default function Layout({ children }) {
         <meta property="og:image" content="/images/OG_Image.jpg" />
         <meta property="og:url" content="https://irenetruong.com/"></meta>
         <meta name="twitter:card" content="summary_large_image" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="images/favicon.ico" />
       </Head>
 
       <header id="top">

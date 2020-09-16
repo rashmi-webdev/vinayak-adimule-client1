@@ -97,7 +97,7 @@ export default function Custom404() {
           <h1>Looks like the page you're looking for doesn't exist.</h1>
 
           <Link href="/">
-            <a className="btn-primary">Go to Home Page</a>
+            <a className="btn-primary">Go to home page</a>
           </Link>
         </motion.div>
       </section>

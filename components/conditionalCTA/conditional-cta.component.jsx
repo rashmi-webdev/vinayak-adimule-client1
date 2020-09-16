@@ -29,7 +29,7 @@ export default function ConditionalCTA() {
         <aside>
           <h2>Thanks for visiting! Want to view the site again? 😉</h2>
           <Link href="/">
-            <a className="btn-primary">Go to Home Page</a>
+            <a className="btn-primary">Go to home page</a>
           </Link>
           <ScrollTopArrow />
         </aside>
