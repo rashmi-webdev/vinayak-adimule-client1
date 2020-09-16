@@ -55,7 +55,7 @@
   }
   .copy {
     padding: 30px;
-    min-height: 360px;
+    min-height: 380px;
     a {
       color: $button-background-teal;
       &:focus,
@@ -87,7 +87,7 @@
 @media (max-width: 1200px) {
   .project-card-list {
     .copy {
-      min-height: 380px;
+      min-height: 400px;
     }
     .btn-secondary {
       margin: 2.5px 0;
@@ -99,7 +99,7 @@
 @media (max-width: 1024px) {
   .project-card-list {
     .copy {
-      min-height: 416px;
+      min-height: 470px;
     }
   }
 }
@@ -107,6 +107,11 @@
 @media (max-width: 768px) {
   .projects-container {
     background-attachment: revert;
+    svg {
+      max-width: 100%;
+      top: -15px;
+      right: 390px;
+    }
   }
   .project-card-list {
     .card {
@@ -149,7 +154,6 @@
 
   .projects-container {
     svg {
-      max-width: 100%;
       top: -275px;
       right: 160px;
     }
