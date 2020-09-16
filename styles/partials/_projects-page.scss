@@ -104,13 +104,17 @@
   }
 }
 
+@media (max-width: 991px) {
+  svg {
+    top: -470px;
+  }
+}
+
 @media (max-width: 768px) {
   .projects-container {
     background-attachment: revert;
     svg {
-      max-width: 100%;
-      top: -15px;
-      right: 390px;
+      left: -160px;
     }
   }
   .project-card-list {
@@ -154,7 +158,8 @@
 
   .projects-container {
     svg {
-      top: -275px;
+      max-width: 100%;
+      top: -400px;
       right: 160px;
     }
   }

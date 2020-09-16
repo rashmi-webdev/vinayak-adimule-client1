@@ -32,6 +32,45 @@ import {
 
 import { faExpand } from "@fortawesome/free-solid-svg-icons";
 
+const svgVariants = {
+  hidden: {
+    x: 10,
+  },
+  visible: {
+    x: 0,
+  },
+  transition: { duration: 3 },
+};
+
+// white rect
+const pathVariants = {
+  hidden: {
+    opacity: 0,
+  },
+  visible: {
+    opacity: 1,
+    transition: {
+      duration: 2,
+      ease: "easeInOut",
+    },
+  },
+};
+
+const pathVariants2 = {
+  hidden: {
+    opacity: 0,
+    pathLength: 0,
+  },
+  visible: {
+    opacity: 1,
+    pathLength: 1,
+    transition: {
+      duration: 4,
+      ease: "easeInOut",
+    },
+  },
+};
+
 export default function Home() {
   const useMediaQuery = (width) => {
     const [targetReached, setTargetReached] = useState(false);
@@ -70,10 +109,52 @@ export default function Home() {
         <section className="home-hero">
           <div className="hero-image-container">
             <LazyLoad height={900}>
-              <img src="images/hero.jpg" alt="" />
+              <img src="images/hero2.jpg" alt="" />
+
+              <motion.svg
+                variants={svgVariants}
+                initial="hidden"
+                animate="visible"
+                width="583"
+                height="856"
+                viewBox="0 0 783 856"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <motion.rect
+                  variants={pathVariants}
+                  initial="hidden"
+                  animate="visible"
+                  x="38"
+                  y="50"
+                  width="490"
+                  height="685"
+                  stroke="#fff"
+                  strokeWidth="3"
+                ></motion.rect>
+                <rect
+                  x="76"
+                  y="90"
+                  width="490"
+                  height="684"
+                  stroke="#FFAB5C"
+                  strokeWidth="3"
+                />
+                <motion.rect
+                  variants={pathVariants2}
+                  initial="hidden"
+                  animate="visible"
+                  x="93.173"
+                  y="136.1937"
+                  width="490.136"
+                  height="684.341"
+                  transform="rotate(12.5709 198.173 46.1937)"
+                  stroke="#0D8274"
+                  strokeWidth="3"
+                ></motion.rect>
+              </motion.svg>
             </LazyLoad>
           </div>
-          {/* <motion.div initial={{ y: 20 }} animate={{ y: 0 }}> */}
           <motion.div
             className="introduction"
             initial={{ y: 20 }}

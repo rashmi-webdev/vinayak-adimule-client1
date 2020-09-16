@@ -29,6 +29,10 @@ img {
   max-width: 100%;
 }
 
+main {
+  overflow: hidden;
+}
+
 .lazyload-wrapper {
   height: 100%;
 }
@@ -222,9 +226,8 @@ aside {
   }
   .error-section {
     svg {
-      max-width: 100%;
-      top: -15px;
-      left: -210px;
+      left: -160px;
+      top: -460px;
     }
   }
 }
@@ -279,8 +282,9 @@ aside {
   }
   .error-section {
     svg {
-      top: -275px;
-      left: -160px;
+      max-width: 100%;
+      top: -400px;
+      right: 160px;
     }
   }
 }
