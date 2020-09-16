@@ -35,10 +35,10 @@ const PROJECTS_DATA = [
   },
   // {
   //   id: 3,
-  //   title: "Insight Vacations - Uplift Landing Page",
+  //   title: "Insight Vacations - Uplift",
   //   imagePath: "/images/project-previews/Uplift.jpg",
   //   description:
-  //     "Uplift landing page for insightvacations.com. Edited assets within Figma. Only available in US (ensure to change cookie to US region to view).",
+  //     "Built within Sitecore for insightvacations.com. Edited assets within Figma. Only available in US (ensure to change cookie to US region to view).",
   //   skills: ["HTML5", "CSS3", "SCSS/SASS", "Sitecore", "Figma"],
   //   liveUrl: "https://www.insightvacations.com/us/uplift",
   // },

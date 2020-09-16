@@ -119,10 +119,10 @@ export default function Home() {
           </p>
           <p>
             Professionally, I perform accessibility enhancements for websites
-            and work with a ton of legacy code. I write in both React.js and
-            Vue.js for more modern sites. This website is written in React.js ☺️
-            I also bring professional experience working with Figma as part of
-            my growing skillset.
+            and have worked with a variety of codebases, new and old. I prefer
+            to write in either React.js or Vue.js for more modern sites. This
+            website is written in React.js ☺️ I also bring professional
+            experience working with Figma as part of my growing skillset.
           </p>
           <p>
             I have worked in both start-up and big corporation environments

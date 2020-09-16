@@ -4,11 +4,11 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 Hello! Thank you for visiting the source code of my portfolio site found at [`irenetruong.com`](https://irenetruong.com/).
 
-Some features I'm proud of:
+Features:
 
 - Built in Next.js
 - ES6, React Hooks
-- Fade in project cards in /project page
 - Active classes for navigation, and for project filter on select
-- Project skill filter
+- Filter projects by selection
 - 404 page if you try to go to a non-existing page
+- Transitions: Fade in project cards in /project page, when going to another page, SVG tracing on /project and /404
