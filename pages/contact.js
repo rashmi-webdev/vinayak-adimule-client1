@@ -2,6 +2,8 @@ import Head from "next/head";
 
 import LazyLoad from "react-lazyload";
 
+import { motion } from "framer-motion";
+
 export default function Contact() {
   return (
     <>
@@ -12,7 +14,11 @@ export default function Contact() {
         <div className="contact-hero"></div>
       </LazyLoad>
       <section className="grey-background contact-card-container">
-        <div className="white-contact-card ">
+        <motion.div
+          className="white-contact-card "
+          initial={{ y: 20 }}
+          animate={{ y: 0 }}
+        >
           <h1>Contact</h1>
 
           <form
@@ -53,7 +59,7 @@ export default function Contact() {
               </button>
             </fieldset>
           </form>
-        </div>
+        </motion.div>
       </section>
     </>
   );

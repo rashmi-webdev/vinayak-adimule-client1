@@ -166,12 +166,6 @@ aside {
     width: 58px;
     font-weight: bold;
   }
-  &:hover,
-  &:focus {
-  }
-  // @media (max-width: 450px) {
-  //   left: 75%;
-  // }
 }
 
 .grey-background {
@@ -183,15 +177,24 @@ aside {
 }
 
 .error-section {
-  background: #fff url("/images/projects-bg.jpg") no-repeat;
-  background-size: contain;
-  background-position: 0 100px;
-  background-attachment: fixed;
   min-height: 80vh;
+  position: relative;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  svg {
+    position: absolute;
+    z-index: -1;
+    left: 0px;
+  }
+  .error-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
   h1 {
     @include wrapper;
     margin-bottom: 16px;
@@ -219,7 +222,7 @@ aside {
   }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 480px) {
   h1 {
     @include desktopHeading3;
   }
@@ -265,6 +268,13 @@ aside {
     }
     img {
       height: 24px;
+    }
+  }
+  .error-section {
+    svg {
+      max-width: 100%;
+      top: -275px;
+      left: -160px;
     }
   }
 }

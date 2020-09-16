@@ -1,11 +1,13 @@
 .projects-container {
-  background: #fff url("/images/projects-bg.jpg") no-repeat;
-  background-size: contain;
-  background-position: 0 100px;
-  background-attachment: fixed;
+  position: relative;
+  overflow: hidden;
   h1 {
     text-align: center;
     padding: 174px 0 64px;
+  }
+  svg {
+    position: absolute;
+    z-index: -1;
   }
 }
 
@@ -82,6 +84,26 @@
   background: #e5e5e5;
 }
 
+@media (max-width: 1200px) {
+  .project-card-list {
+    .copy {
+      min-height: 380px;
+    }
+    .btn-secondary {
+      margin: 2.5px 0;
+      padding: 8px;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .project-card-list {
+    .copy {
+      min-height: 416px;
+    }
+  }
+}
+
 @media (max-width: 768px) {
   .projects-container {
     background-attachment: revert;
@@ -104,6 +126,9 @@
     .tech-used {
       margin-bottom: 0;
     }
+    .btn-secondary {
+      padding: 13px 55px;
+    }
   }
   .skills-list {
     flex-wrap: wrap;
@@ -114,14 +139,19 @@
   }
 }
 
-@media (max-width: 450px) {
-  .projects-container {
-    background-position: 0 75px;
-  }
+@media (max-width: 480px) {
   .skills-list {
     margin-bottom: 48px;
     button {
       width: 33%;
+    }
+  }
+
+  .projects-container {
+    svg {
+      max-width: 100%;
+      top: -275px;
+      right: 160px;
     }
   }
 
@@ -131,8 +161,7 @@
     }
     .button-positioning {
       .btn-secondary {
-        padding: 8px 4px;
-        // margin: 0 5px;
+        padding: 8px;
       }
     }
   }

@@ -6,11 +6,11 @@
 
 .about {
   display: flex;
+  justify-content: space-evenly;
   padding: 155px 0;
   @include wrapper;
   .portraitContainer {
     flex: 0 0 calc(50% - 142px);
-    margin-right: 142px;
   }
   .copy {
     flex: 0 0 50%;
@@ -58,7 +58,7 @@
   }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 480px) {
   .heroBackground {
     background-position: 60%;
     margin-bottom: 40px;
