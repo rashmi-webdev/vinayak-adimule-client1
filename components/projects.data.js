@@ -155,7 +155,7 @@ const PROJECTS_DATA = [
       "Firebase",
       "Responsive Web Design",
     ],
-    liveUrl: "dream-log.firebaseapp.com/",
+    liveUrl: "https://dream-log.firebaseapp.com/",
     githubUrl: "https://github.com/irenecodes/dream-log",
   },
   {
