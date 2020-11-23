@@ -25,7 +25,7 @@ import {
   faVuejs,
   faGit,
   faAccessibleIcon,
-  faPython,
+  faAngular,
   faFigma,
   faBootstrap,
 } from "@fortawesome/free-brands-svg-icons";
@@ -284,18 +284,18 @@ export default function Home() {
             <h2>Levelling up on</h2>
             <ul>
               <li>
-                <LazyLoad height={40}>
-                  <img src="tech-icons/redux.svg" alt="" />
-                </LazyLoad>
-                <p>Redux</p>
-              </li>
-              <li>
-                <FontAwesomeIcon aria-hidden="true" icon={faPython} />
-                <p>Python</p>
+                <FontAwesomeIcon aria-hidden="true" icon={faAngular} />
+                <p>Angular</p>
               </li>
               <li>
                 <FontAwesomeIcon aria-hidden="true" icon={faFigma} />
                 <p>Figma</p>
+              </li>
+              <li>
+                <LazyLoad height={40}>
+                  <img src="tech-icons/redux.svg" alt="" />
+                </LazyLoad>
+                <p>Redux</p>
               </li>
             </ul>
           </div>
