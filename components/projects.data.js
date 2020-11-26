@@ -33,17 +33,28 @@ const PROJECTS_DATA = [
     ],
     githubUrl: "https://github.com/irenecodes/irene-portfolio-next",
   },
-  // {
-  //   id: 3,
-  //   title: "Insight Vacations - Uplift",
-  //   imagePath: "/images/project-previews/Uplift.jpg",
-  //   description:
-  //     "Built within Sitecore for insightvacations.com. Edited assets within Figma. Only available in US (ensure to change cookie to US region to view).",
-  //   skills: ["HTML5", "CSS3", "SCSS/SASS", "Sitecore", "Figma"],
-  //   liveUrl: "https://www.insightvacations.com/us/uplift",
-  // },
+  {
+    id: 3,
+    title: "Luxury Gold - Luxury Train Tours",
+    imagePath: "/images/project-previews/LGTrainTravel.jpg",
+    description:
+      "Landing Page built within Sitecore for Luxury Gold to promote luxury train tours. Edited assets within Figma.",
+    skills: ["HTML5", "CSS3", "SCSS/SASS", "JavaScript", "Sitecore", "Figma"],
+    liveUrl:
+      "https://www.luxurygold.com/ca/journey-styles/2021-2022-luxury-train-tours",
+  },
   {
     id: 4,
+    title: "Insight Vacations - Well-being",
+    imagePath: "/images/project-previews/IVWellbeing.jpg",
+    description:
+      "Landing Page built within Sitecore for Insight Vacations per company branding specifications.",
+    skills: ["HTML5", "CSS3", "SCSS/SASS", "Sitecore", "Figma"],
+    liveUrl:
+      "https://www.insightvacations.com/us/the-insight-difference/well-being",
+  },
+  {
+    id: 5,
     title: "Personal Date Night",
     imagePath: "/images/project-previews/PersonalDateNight.jpg",
     description:
@@ -60,7 +71,7 @@ const PROJECTS_DATA = [
     githubUrl: "https://github.com/caij-consulting/personal-date-night",
   },
   {
-    id: 5,
+    id: 6,
     title: "Client Portfolio Site",
     imagePath: "/images/project-previews/ClientJoey.jpg",
     description: "Client site coded and deployed. Design provided by client. ",
@@ -69,7 +80,7 @@ const PROJECTS_DATA = [
     githubUrl: "https://github.com/irenecodes/jh-portfolio",
   },
   {
-    id: 6,
+    id: 7,
     title: "Single Page PSD Conversion - Arora Jewlers",
     imagePath: "/images/project-previews/AroraJewlers.jpg",
     description:
@@ -79,7 +90,7 @@ const PROJECTS_DATA = [
     githubUrl: "https://irenecodes.github.io/Arora-Jewlers/",
   },
   {
-    id: 7,
+    id: 8,
     title: "Single Page PSD Conversion - HackerYou Landing Page",
     imagePath: "/images/project-previews/HackerYouLP.jpg",
     description:
@@ -89,7 +100,7 @@ const PROJECTS_DATA = [
     githubUrl: "https://github.com/irenecodes/psd-conversion-challenge",
   },
   {
-    id: 8,
+    id: 9,
     title: "Bookstore",
     imagePath: "/images/project-previews/Bookstore.jpg",
     description:
@@ -105,7 +116,7 @@ const PROJECTS_DATA = [
     githubUrl: "https://github.com/irenecodes/bookstore",
   },
   {
-    id: 9,
+    id: 10,
     title: "Pet Lims",
     imagePath: "/images/project-previews/PetLims.jpg",
     description:
@@ -122,7 +133,7 @@ const PROJECTS_DATA = [
     githubUrl: "https://github.com/irenecodes/Pet-Lims",
   },
   {
-    id: 10,
+    id: 11,
     title: "Keyboard Warrior",
     imagePath: "/images/project-previews/KeyboardWarrior.jpg",
     description:
@@ -132,7 +143,7 @@ const PROJECTS_DATA = [
     githubUrl: "https://github.com/irenecodes/keyboard-warrior",
   },
   {
-    id: 11,
+    id: 12,
     title: "Quote Generator",
     imagePath: "/images/project-previews/QuoteGenerator.jpg",
     description:
@@ -142,7 +153,7 @@ const PROJECTS_DATA = [
     githubUrl: "https://github.com/irenecodes/quote-generator",
   },
   {
-    id: 12,
+    id: 13,
     title: "Sleep Talk",
     imagePath: "/images/project-previews/SleepTalk.jpg",
     description:
@@ -159,7 +170,7 @@ const PROJECTS_DATA = [
     githubUrl: "https://github.com/irenecodes/dream-log",
   },
   {
-    id: 13,
+    id: 14,
     title: "Who's That Pokémon?",
     imagePath: "/images/project-previews/WhosThatPokemon.jpg",
     description:
@@ -180,7 +191,7 @@ const PROJECTS_DATA = [
       "https://github.com/the-best-doduo/harry-grewal-irene-truong-project-4",
   },
   {
-    id: 14,
+    id: 15,
     title: "Multi-Page PSD Conversion - Captured",
     imagePath: "/images/project-previews/Captured.jpg",
     description: "PSD to HTML/CSS Conversion. Design provided by HackerYou.",
