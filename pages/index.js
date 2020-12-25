@@ -30,7 +30,7 @@ import {
   faBootstrap,
 } from "@fortawesome/free-brands-svg-icons";
 
-import { faExpand } from "@fortawesome/free-solid-svg-icons";
+import { faCloudRain, faExpand, faEyeDropper, faFlask, faGlobe, faHeart, faMagic, faStar } from "@fortawesome/free-solid-svg-icons";
 
 const svgVariants = {
   hidden: {
@@ -103,13 +103,13 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Irene Truong | Web Developer</title>
+        <title>Dr. Vinayak Adimule</title>
       </Head>
       <LazyLoad height={900}>
         <section className="home-hero">
           <div className="hero-image-container">
             <LazyLoad height={900}>
-              <img src="images/hero2.jpg" alt="" />
+              <img src="images/hero2.jpg" alt="profile picture" />
 
               <motion.svg
                 variants={svgVariants}
@@ -121,37 +121,9 @@ export default function Home() {
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
               >
-                <motion.rect
-                  variants={pathVariants}
-                  initial="hidden"
-                  animate="visible"
-                  x="38"
-                  y="50"
-                  width="490"
-                  height="685"
-                  stroke="#fff"
-                  strokeWidth="3"
-                ></motion.rect>
-                <rect
-                  x="76"
-                  y="90"
-                  width="490"
-                  height="684"
-                  stroke="#FFAB5C"
-                  strokeWidth="3"
-                />
-                <motion.rect
-                  variants={pathVariants2}
-                  initial="hidden"
-                  animate="visible"
-                  x="93.173"
-                  y="136.1937"
-                  width="490.136"
-                  height="684.341"
-                  transform="rotate(12.5709 198.173 46.1937)"
-                  stroke="#0D8274"
-                  strokeWidth="3"
-                ></motion.rect>
+                
+                
+                
               </motion.svg>
             </LazyLoad>
           </div>
@@ -161,13 +133,13 @@ export default function Home() {
             animate={{ y: 0 }}
           >
             <h1>
-              Irene Truong is a web developer specializing in{" "}
-              <span>Front-End Development</span>. She brings{" "}
-              <span>experience</span> in both start-up and corporate settings.
+             Vinayak Adimule is a Chemistry professor specializing in{" "}
+              <span style={{ color:"purple"}}> R & D</span>. He brings{" "}
+              <span style={{ color:"purple"}} >experience</span> in both Education and Research.
             </h1>
             <div>
-              <Link href="/projects">
-                <a className="btn-primary">View projects</a>
+              <Link href="/publications">
+                <a className="btn-primary">View publications</a>
               </Link>
             </div>
             <div className={homeStyles.socialContainer}>
@@ -175,169 +147,175 @@ export default function Home() {
             </div>
             {/* </motion.div> */}
           </motion.div>
-          <a
-            href="#about"
-            className="scroll-to-about"
-            aria-label="Click to scroll to Irene's about section."
-          >
-            <img src="/images/white-arrow.svg" alt="" className="arrow" />
-          </a>
+          
         </section>
       </LazyLoad>
 
       <section className={homeStyles.about} id="about">
         <div className={homeStyles.portraitContainer}>
           <LazyLoad height={400}>
-            <img src="/images/PortraitSquare.jpg" alt="Irene's headshot." />
+            <img src="/images/PortraitSquare.jpg" alt=" headshot." />
           </LazyLoad>
         </div>
         <div className={homeStyles.copy}>
           <h2>About me</h2>
           <p>
-            Hihi! My name is Irene, and I am a front-end developer situated in
-            Toronto, Ontario.
+            Hello! My name is Dr Vinayak Adimule, and I am a chemistry professor  situated in
+            Hubli, Karnataka.
           </p>
           <p>
-            Professionally, I perform accessibility enhancements for websites
-            and have worked with a variety of codebases, new and old. I prefer
-            to write in either React.js or Vue.js for more modern sites. This
-            website is written in React.js ☺️ I also bring professional
-            experience working with Figma as part of my growing skillset.
+            Professionally, I have  thirteen years of research experience at different R&D organisations of
+            TATA (Advinus), Astra Zeneca India, Trans Chem etc. Specialized in the area of
+            medicinal chemistry (Anticancer Drugs), Nano science and Technology, Material
+            Chemistry and Pharmaceutical Chemistry.
           </p>
           <p>
-            I have worked in both start-up and big corporation environments
-            coding from scratch and working with content management systems
-            (CMS) such as Sitecore. My flexibility and work ethic has allowed me
-            to thrive in both capacities, pick up tech and tools quickly, and
-            contribute meaningfully.
+            I have published more than 60 research
+            article in National and International. Board member for more than 20 reputed
+            societies overall world, Attended 40 than national and international conferences.
+
           </p>
           <p>
-            Outside of coding, I am a self-proclaimed professional cat petter,
-            play Fall Guys and Pokémon GO, and love to take short walks by
-            nature's trails. I am also a fan of the MBTI personality test.
+                      Presently working as HOD and Assistant Professor of Chemistry in Jain College
+            of Engineering and Technology, Hubballi, Karnataka, India and principle
+            investigator for Government of India and Government of Karnataka for major
+            sponsored project.
           </p>
         </div>
       </section>
       <section className="grey-background">
         <div className={homeStyles.skills}>
           <div className="current">
-            <h2>Fluent in</h2>
+            <h2>Research Areas</h2>
             <ul>
               <li>
-                <FontAwesomeIcon aria-hidden="true" icon={faHtml5} />
-                <p>HTML5</p>
+                <FontAwesomeIcon aria-hidden="true" icon={faStar} />
+                <p>Functional Nanomaterials</p>
               </li>
               <li>
-                <FontAwesomeIcon aria-hidden="true" icon={faCss3Alt} />
-                <p>CSS3</p>
+                <FontAwesomeIcon aria-hidden="true" icon={faFlask} />
+                <p>Nanocomposites </p>
               </li>
               <li>
-                <FontAwesomeIcon aria-hidden="true" icon={faSass} />
-                <p>SCSS/SASS</p>
-              </li>
-              <li>
-                <FontAwesomeIcon aria-hidden="true" icon={faLess} />
-                <p>Less</p>
-              </li>
-              <li>
-                <FontAwesomeIcon aria-hidden="true" icon={faBootstrap} />
-                <p>Bootstrap</p>
-              </li>
-              <li>
-                <FontAwesomeIcon aria-hidden="true" icon={faJs} />
-                <p>JavaScript</p>
-              </li>
-              <li>
-                <LazyLoad height={40}>
-                  <img src="tech-icons/jquery.svg" alt="" />
-                  <p>jQuery</p>
-                </LazyLoad>
-              </li>
-              <li>
-                <FontAwesomeIcon aria-hidden="true" icon={faReact} />
-                <p>React</p>
-              </li>
-              <li>
-                <FontAwesomeIcon aria-hidden="true" icon={faVuejs} />
-                <p>Vue</p>
-              </li>
-              <li>
-                <FontAwesomeIcon aria-hidden="true" icon={faGit} />
-                <p>Git</p>
-              </li>
-              <li>
-                <FontAwesomeIcon aria-hidden="true" icon={faExpand} />
+                <FontAwesomeIcon aria-hidden="true" icon={faFlask} />
                 <p>
-                  <abbr title="Responsive Web Design">RWD</abbr>
+                  <abbr title="Optical properties of nanocomposites">Optical properties of NC</abbr>
                 </p>
               </li>
               <li>
-                <FontAwesomeIcon aria-hidden="true" icon={faAccessibleIcon} />
-                <p>
-                  <abbr title="Web Content Accessibility Guidelines">WCAG</abbr>{" "}
-                  2.0
+                <FontAwesomeIcon aria-hidden="true" icon={faFlask} />
+                <p>Electrical properties of
+                  <abbr title=" nanocomposites"> NC</abbr>
+                  
                 </p>
               </li>
+              <li>
+                <FontAwesomeIcon aria-hidden="true" icon={faEyeDropper} />
+                <p> Ligand doping to               
+                  <abbr title=" Rare earth nanocommposite"> REN </abbr>
+                </p>
+              </li>
+              <li>
+                <FontAwesomeIcon aria-hidden="true" icon={faGlobe} />
+                <p>Rare Earth MetalComplexes</p>
+              </li>
+              <li>
+                <FontAwesomeIcon aria-hidden="true" icon={faCloudRain} />
+                <p> Co-Precipitation Synthesis of <abbr title="Rare earth metals">REM</abbr></p>
+              </li>
+              
+              <li>
+                <FontAwesomeIcon aria-hidden="true" icon={faFlask} />
+                <p>Characterization of
+                  <abbr title=" Rare earth metals"> REM</abbr>
+                </p>
+              </li>
+              <li>
+                <FontAwesomeIcon aria-hidden="true" icon={faMagic} />
+                <p> <abbr title="Photovoltaic Characteristics o Rare earth nanocommposite"> Photovoltaic Characteristics </abbr></p>
+              </li>
+              
+              <li>
+                <FontAwesomeIcon aria-hidden="true" icon={faMagic} />
+                <p>                
+                  <abbr title="Optical
+                Properties of Rare earth metals">Optical
+                Properties of REM </abbr>
+                   </p>             
+              </li>
+              <li>
+                <FontAwesomeIcon aria-hidden="true" icon={faMagic} />
+                <abbr title="Synthesis of Rare earth metals">Synthesis of REM
+                  </abbr>              
+                  </li>
+              <li>
+                <FontAwesomeIcon aria-hidden="true" icon={faMagic} />
+                <p>
+                  <abbr title="Medicinal properties of Rare earth metals">Medicinal properties of REM
+                  </abbr>
+                  
+                </p>
+              </li>
+              
+              
             </ul>
           </div>
           <div className="future">
-            <h2>Levelling up on</h2>
+            <h2>Computer Skills</h2>
             <ul>
+              
               <li>
-                <FontAwesomeIcon aria-hidden="true" icon={faAngular} />
-                <p>Angular</p>
+                <FontAwesomeIcon aria-hidden="true" icon={faStar} />
+                <p> ACD Chemdraw </p>
               </li>
               <li>
-                <FontAwesomeIcon aria-hidden="true" icon={faFigma} />
-                <p>Figma</p>
+                <FontAwesomeIcon aria-hidden="true" icon={faStar} />
+                <p>Sci Finder</p>
               </li>
               <li>
-                <LazyLoad height={40}>
-                  <img src="tech-icons/redux.svg" alt="" />
-                </LazyLoad>
-                <p>Redux</p>
+                <FontAwesomeIcon aria-hidden="true" icon={faStar} />
+                <p>Navision Axapta</p>
               </li>
             </ul>
           </div>
         </div>
-      </section>
-      <section className="featured-project">
-        <h2>Featured Project</h2>
-        {isTablet ? (
-          <video width="600" height="270" controls>
-            <source src="/images/LHVideoPreview.mp4" type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
-        ) : (
-          <video width="1000" height="525" controls>
-            <source src="/images/LHVideoPreview.mp4" type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
-        )}
+        <div className = "current"></div>
 
-        <h3>Lawson Heights</h3>
-        <div className="featured-layout">
-          <div className="project-description">
-            <p>
-              Client site built at Mobile Fringe. Front-end built with Vue.js to
-              extract dynamic content from CMS. Utilizes Vuex for state
-              management, and Vue-Router for routing.{" "}
-            </p>
-            <p className="tech-used">
-              <strong>Used:</strong>Vue.js, Nuxt.js, HTML5, SCSS, Bootstrap,
-              JavaScript, Responsive Web Design
-            </p>
-          </div>
-          <a
-            className="btn-secondary"
-            href="https://mallatlawsonheights.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            View live
-          </a>
-        </div>
       </section>
+      
+      <section className="projects-container">
+         
+          <motion.h1 initial={{ y: 20 }} animate={{ y: 0 }}>
+                    Achievements
+                           </motion.h1>
+         <div className="wrapper">
+
+                  <div className="featured-layout " style={{margin:50}}>
+                        <h2> Earned Best Oral Award for Paper</h2>
+                        <br></br>
+                        <h3 style={{color:"purple"}}>A Facile Synthesis of Poly (3-octyl thiophene): Ni0.4Sr0.6TiO3 Hybrid Nanocomposites for Solar Cell Applications in Fourth International Conference on Advances in Material Science (ICAMS-2020) on 20-21 January 2020 organized by Post-Graduate Department of Physics, Raje Ramrao Mahavidyalaya, Jath- 416 404, Dist.-Sangli, Maharashtra, India</h3>
+                        <br></br>
+                        <a className="btn-primary" href="https://onlinelibrary.wiley.com/doi/abs/10.1002/masy.202000001">
+                        View
+                        </a>
+                          
+                  </div>
+                  <div className="featured-layout " style={{margin:50}}>
+                        <h2>Paper presentation at Second International Conference on Materials Science and Manufacturing Technology (ICMSMT 2020 on 9th and 10th April 2020 at the Hotel Aloft, Coimbatore, Tamil Nadu, India. </h2>
+                        <br></br>
+                        <h3 style={{color:"purple"}} > Synthesis, characterization and impedance studies of novel nanocomposites of gadolinium titanate</h3>
+                        <br></br>
+                        <a className="btn-primary" href="https://iopscience.iop.org/article/10.1088/1757-899X/872/1/012099">
+                        View
+                        </a>
+                          
+                  </div>
+                  
+
+      
+         </div>
+
+        </section>
     </>
   );
 }

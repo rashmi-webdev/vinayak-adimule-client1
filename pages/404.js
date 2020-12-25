@@ -48,7 +48,7 @@ export default function Custom404() {
   return (
     <>
       <Head>
-        <title>Irene Truong | Web Developer</title>
+        <title>Dr Vinayak Adimule </title>
       </Head>
       <section className="error-section">
         <motion.svg

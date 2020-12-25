@@ -6,7 +6,9 @@ export default function PersistFooter() {
       <footer>
         <div className="social-and-credits">
           <SocialIcons />
-          <p>All rights reserved. v1.0</p>
+          <p>Vinayak Adimule Copyright 2020. <h5>All rights reserved</h5>
+             </p>
+            
         </div>
       </footer>
     </>

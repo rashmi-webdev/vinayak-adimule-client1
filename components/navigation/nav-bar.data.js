@@ -6,14 +6,20 @@ const NAV_BAR_DATA = [
   },
   {
     id: 2,
-    href: "/projects",
-    displayName: "Projects",
+    href: "/education",
+    displayName: "Education",
   },
   {
     id: 3,
+    href: "/professionalexp",
+    displayName: "Experience",
+  },
+  {
+    id: 4,
     href: "/contact",
     displayName: "Contact",
   },
+ 
 ];
 
 export default NAV_BAR_DATA;

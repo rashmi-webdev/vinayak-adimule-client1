@@ -12,12 +12,25 @@ export default function ConditionalCTA() {
       {router.pathname == "/" ? (
         <aside>
           <h2>Want to see more?</h2>
-          <Link href="/projects">
-            <a className="btn-primary">View all projects</a>
+          <Link href="/publications">
+            <a className="btn-primary">Publications</a>
           </Link>
+          <Link href="/achievements">
+            <a className="btn-primary">Achievements</a>
+          </Link>
+          <Link href="/publications">
+            <a className="btn-primary">Education</a>
+          </Link>
+          <Link href="/publications">
+            <a className="btn-primary">Professional experience</a>
+          </Link>
+          <Link href="/publications">
+            <a className="btn-primary">Work Experience</a>
+          </Link>
+         
           <ScrollTopArrow />
         </aside>
-      ) : router.pathname == "/projects" ? (
+      ) : router.pathname == "/publications" ? (
         <aside className="grey-background">
           <h2>Want to get in touch?</h2>
           <Link href="/contact">

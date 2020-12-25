@@ -7,10 +7,10 @@ import NavBar from "../navigation/nav-bar-component";
 import PersistFooter from "../footer/footer-component";
 import ConditionalCTA from "../conditionalCTA/conditional-cta.component";
 
-const name = "Irene Truong";
+const name = "Vinayak Adimule";
 const description =
-  "Irene Truong is a Web Developer specializing in Front-End servicing the Toronto and Greater Toronto Area.";
-export const siteTitle = "Irene Truong | Web Developer";
+  "Chemistry professor";
+export const siteTitle = "Dr. Vinayak Adimule";
 
 export default function Layout({ children }) {
   const router = useRouter();
@@ -21,7 +21,7 @@ export default function Layout({ children }) {
         <meta name="description" content={description} />
         <meta
           name="keywords"
-          content="Front-End, Front End Developer, Web Developer, Irene Truong, Developer, GTA Web Developer, Toronto Web Developer"
+          content="Chemistry, Professor, Hubli, Karnataka, Dharwad, research, Toronto Web Developer"
         />
         <meta name="author" content={name} />
         <meta name="og:title" content={siteTitle} />

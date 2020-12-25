@@ -1,7 +1,7 @@
 const PROJECTS_DATA = [
   {
     id: 1,
-    title: "Lawson Heights",
+    title: "Synthesis of N-{[(2, 4-dichlorophenyl)-1, 3, 4-oxadiazole-2-yl] methyl} amine derivatives as anticancer precursors",
     imagePath: "/images/project-previews/LawsonHeights.jpg",
     description:
       "Client site built at Mobile Fringe. Front-end built with Vue.js to extract dynamic content from CMS. Utilizes Vuex for state management, and Vue-Router for routing. ",

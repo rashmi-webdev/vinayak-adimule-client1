@@ -8,7 +8,7 @@ export default function Contact() {
   return (
     <>
       <Head>
-        <title>Irene Truong | Contact</title>
+        <title>Dr. Vinayak Adimule | Contact</title>
       </Head>
       <LazyLoad height={300}>
         <div className="contact-hero"></div>
@@ -20,45 +20,9 @@ export default function Contact() {
           animate={{ y: 0 }}
         >
           <h1>Contact</h1>
-
-          <form
-            action="https://formspree.io/itruong25.it@gmail.com"
-            method="POST"
-            autoComplete="off"
-            name="contact-form"
-          >
-            <fieldset>
-              <legend className="visuallyHidden">
-                Please fill out all inputs of the following form if you'd like
-                to get in touch.
-              </legend>
-              <div className="personal-input">
-                <label htmlFor="name"> Name</label>
-                <input type="name" required id="name" name="name" />
-
-                <label htmlFor="email-address">Email</label>
-                <input
-                  type="email"
-                  required
-                  id="email-address"
-                  name="_replyto"
-                />
-                <label htmlFor="message">Message</label>
-                <textarea
-                  name="message"
-                  id="message"
-                  required
-                  cols="30"
-                  rows="10"
-                  name="message"
-                ></textarea>
-              </div>
-
-              <button className="btn-primary form-submit" type="submit">
-                Submit
-              </button>
-            </fieldset>
-          </form>
+          <h3>Current location : Hubli, Karnataka, IN</h3>
+          <h3>Phone number :+919481268717 , +918660946136 </h3>
+         <h3>Email me at : <a href="mailto:adimulevinayak@yahoo.in">adimulevinayak@yahoo.in</a>  ,<a href="mailto:vinayakadimule2006@gmail.com">vinayakadimule2006@gmail.com</a>   </h3>
         </motion.div>
       </section>
     </>

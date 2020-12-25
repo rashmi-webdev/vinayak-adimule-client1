@@ -13,9 +13,9 @@ export default function NavBar(props) {
       <Link href="/">
         <div className="logo-container">
           {router.pathname == "/contact" ? (
-            <img src="/images/logoOnContact.svg" alt="Irene Truong's logo." />
+            <img src="/images/logoOnContact.svg" alt=" logo." />
           ) : (
-            <img src="/images/logo-light-bg.svg" alt="Irene Truong's logo." />
+            <img src="/images/logo-light-bg.svg" alt=" logo." />
           )}
         </div>
       </Link>
