@@ -18,13 +18,13 @@ export default function ConditionalCTA() {
           <Link href="/achievements">
             <a className="btn-primary">Achievements</a>
           </Link>
-          <Link href="/publications">
+          <Link href="/education">
             <a className="btn-primary">Education</a>
           </Link>
-          <Link href="/publications">
+          <Link href="/professionalexp">
             <a className="btn-primary">Professional experience</a>
           </Link>
-          <Link href="/publications">
+          <Link href="/workexp">
             <a className="btn-primary">Work Experience</a>
           </Link>
          
