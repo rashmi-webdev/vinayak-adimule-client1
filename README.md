@@ -2,6 +2,8 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Vinayak Adimule's portfolio site.
 
+ [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/rashmi-webdev/vinayak-adimule-client)
+
 Hello! Thank you for visiting the source code of my portfolio site found at 
 
 Features:
