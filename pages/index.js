@@ -184,103 +184,89 @@ export default function Home() {
         </div>
       </section>
       <section className="grey-background">
-        <div className={homeStyles.skills}>
-          <div className="current">
+        {/* <div className={homeStyles.skills}> */}
+        <div class="wrapper" style={{textAlign:"center" }}>
+          <br></br>
             <h2>Research Areas</h2>
             <ul>
-              <li>
-                <FontAwesomeIcon aria-hidden="true" icon={faStar} />
-                <p>Functional Nanomaterials</p>
+              <li style={{fontSize:"1.2em" , color:"purple"}}>
+                Functional Nanomaterials
               </li>
-              <li>
-                <FontAwesomeIcon aria-hidden="true" icon={faFlask} />
-                <p>Nanocomposites </p>
+              <li style={{fontSize:"1.2em" , color:"purple"}} >
+                Nanocomposites 
               </li>
-              <li>
-                <FontAwesomeIcon aria-hidden="true" icon={faFlask} />
-                <p>
+              <li style={{fontSize:"1.2em" , color:"purple"}}>
+                
                   <abbr title="Optical properties of nanocomposites">Optical properties of NC</abbr>
-                </p>
+                
               </li>
-              <li>
-                <FontAwesomeIcon aria-hidden="true" icon={faFlask} />
-                <p>Electrical properties of
+              <li style={{fontSize:"1.2em" , color:"purple"}}>
+                Electrical properties of
                   <abbr title=" nanocomposites"> NC</abbr>
                   
-                </p>
+                
               </li>
-              <li>
-                <FontAwesomeIcon aria-hidden="true" icon={faEyeDropper} />
-                <p> Ligand doping to               
+              <li style={{fontSize:"1.2em" , color:"purple"}}>
+               Ligand doping to               
                   <abbr title=" Rare earth nanocommposite"> REN </abbr>
-                </p>
+                
               </li>
-              <li>
-                <FontAwesomeIcon aria-hidden="true" icon={faGlobe} />
-                <p>Rare Earth MetalComplexes</p>
+              <li style={{fontSize:"1.2em" , color:"purple"}} >
+                Rare Earth MetalComplexes
               </li>
-              <li>
-                <FontAwesomeIcon aria-hidden="true" icon={faCloudRain} />
-                <p> Co-Precipitation Synthesis of <abbr title="Rare earth metals">REM</abbr></p>
+              <li style={{fontSize:"1.2em" , color:"purple"}}>
+                Co-Precipitation Synthesis of <abbr title="Rare earth metals">REM</abbr>
               </li>
               
-              <li>
-                <FontAwesomeIcon aria-hidden="true" icon={faFlask} />
-                <p>Characterization of
+              <li style={{fontSize:"1.2em" , color:"purple"}}>
+                Characterization of
                   <abbr title=" Rare earth metals"> REM</abbr>
-                </p>
+                
               </li>
-              <li>
-                <FontAwesomeIcon aria-hidden="true" icon={faMagic} />
-                <p> <abbr title="Photovoltaic Characteristics o Rare earth nanocommposite"> Photovoltaic Characteristics </abbr></p>
+              <li style={{fontSize:"1.2em" , color:"purple"}}>
+                <abbr title="Photovoltaic Characteristics o Rare earth nanocommposite"> Photovoltaic Characteristics </abbr>
               </li>
               
-              <li>
-                <FontAwesomeIcon aria-hidden="true" icon={faMagic} />
-                <p>                
+              <li style={{fontSize:"1.2em" , color:"purple"}} >
+                               
                   <abbr title="Optical
                 Properties of Rare earth metals">Optical
                 Properties of REM </abbr>
-                   </p>             
+                              
               </li>
-              <li>
-                <FontAwesomeIcon aria-hidden="true" icon={faMagic} />
+              <li style={{fontSize:"1.2em" , color:"purple"}}>
                 <abbr title="Synthesis of Rare earth metals">Synthesis of REM
                   </abbr>              
                   </li>
-              <li>
-                <FontAwesomeIcon aria-hidden="true" icon={faMagic} />
-                <p>
+              <li style={{fontSize:"1.2em" , color:"purple"}}>
+                
                   <abbr title="Medicinal properties of Rare earth metals">Medicinal properties of REM
                   </abbr>
                   
-                </p>
+                
               </li>
               
-              
-            </ul>
-          </div>
-          <div className="future">
+              </ul>
+          <div className="">
+            <br></br>
             <h2>Computer Skills</h2>
-            <ul>
-              
-              <li>
-                <FontAwesomeIcon aria-hidden="true" icon={faStar} />
-                <p> ACD Chemdraw </p>
+            
+              <ul>
+              <li style={{fontSize:"1.2em" , color:"green"}}>
+                 ACD Chemdraw 
               </li>
-              <li>
-                <FontAwesomeIcon aria-hidden="true" icon={faStar} />
-                <p>Sci Finder</p>
+              <li style={{fontSize:"1.2em" , color:"green"}} >
+                Sci Finder
               </li>
-              <li>
-                <FontAwesomeIcon aria-hidden="true" icon={faStar} />
-                <p>Navision Axapta</p>
+              <li style={{fontSize:"1.2em" , color:"green"}} >
+                Navision Axapta
               </li>
-            </ul>
+              </ul>
           </div>
         </div>
         <div className = "current"></div>
-
+<br>
+</br>
       </section>
       
       <section className="projects-container">
