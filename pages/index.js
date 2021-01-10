@@ -176,8 +176,8 @@ export default function Home() {
 
           </p>
           <p>
-                      Presently working as HOD and Assistant Professor of Chemistry in Jain College
-            of Engineering and Technology, Hubballi, Karnataka, India and principle
+            Presently working as HOD and Assistant Professor and Dean R&D Angadi Insitute of technolgy and management
+            Belagavi, Karnataka, India and principle
             investigator for Government of India and Government of Karnataka for major
             sponsored project.
           </p>
